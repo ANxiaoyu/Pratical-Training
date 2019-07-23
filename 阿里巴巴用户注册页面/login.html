@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            width:954px; 
+            margin: 0 auto;
+        }
+        .top {
+            width: 100%;
+            height: 107px;
+        }
+        .content {
+            width: 100%;
+            font-family: Microsoft YaHei,黑体,宋体,Tahoma,Arial;
+            color: #666;
+        }
+        
+        .content label {
+            width: 88px;
+            /*height: 15px;
+            line-height: 15px;*/
+            text-align: right;
+            padding-right: 20px;
+            font-size: 14px;
+           /*color: #666;*/
+           display: inline-block;
+           vertical-align: top;
+           margin-bottom: 25px;
+           margin-left: 100px;
+        }
+        .content input {
+            box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.3);
+            width: 200px;
+        }
+        .content #radio {
+            box-shadow: none;
+            width: 12px;
+        }
+        .content .se_code {
+            margin-top: 20px;
+            position: relative;    
+        }
+        .content #security {
+            width: 80px;
+            vertical-align: top;  
+        }
+       .content #img {
+           position: absolute;
+           top: -15px;
+           padding-left: 6px;
+       } 
+       .content #a1 {
+           position: absolute;
+           vertical-align: top;
+           padding-left: 160px;
+       }
+       .content #agree {
+           margin-top: 20px;
+           margin-left: 210px;
+       }
+       .content .btnagree {
+           display: block;
+           margin-bottom: 20px;
+       }
+       .content #agree #txt {
+           width: 500px;
+           height: 60px;
+           box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.3);
+           margin-bottom: 5px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <img src="top.png" alt="">
+        </div>
+        <div class="content">
+            <div>
+                <label>电子邮箱:</label>
+                <input type="text" id="emila" name="emila">
+            </div>
+            <div>
+                <label>会员登录名:</label>
+                <input type="text" name="username" id="user">
+            </div>
+            <div>
+                <label>密码:</label>
+                <input type="password" name="password" id="pwd">
+            </div>
+            <div>
+                <label>再次输入密码:</label>
+                <input type="password" name="password" id="repwd">
+            </div>
+            <div>
+                <label>会员身份:</label>
+                <input type="radio" name="radio" id="radio" checked>买家
+                <input type="radio" name="radio" id="radio">卖家
+                <input type="radio" name="radio" id="radio">两者都是
+            </div>
+            <div class="se_code">
+                <label>验证码:</label>
+                <input type="text" name="security" id="security"> 
+                <img src="4.png" alt="" id="img" width="132" height="55">
+                
+                <a href="#" id="a1">看不清？换一张</a>
+            </div>
+            <div id="agree">
+                <a href="#" class="btnagree"><img src="3.png" alt=""></a>
+                <textarea name="txt" id="txt" >
+                    欢迎阅读阿里巴巴公司（阿里巴巴）服务条款协议(下称"本协议")，您应当在使用服务之前认真阅读本协议全部内容，且对本协议中加粗字体显示的内容，阿里巴巴督促您应重点阅读。本协议阐述之条款和条件适用于您使用阿里巴巴中文网站（所涉域名为：Alibaba.com.cn、alibaba.cn、1688.com，下同），所提供的在全球企业间(B-TO-B)电子市场(e-market)中进行贸易和交流的各种工具和服务(下称"服务")。 
+                </textarea>
+            </div>
+        </div>
+        <div class="bottom">
+            <img src="bottom.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
