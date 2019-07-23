@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		#login {
+			width: 450px;
+			height: 300px;
+			border: 1px solid black;
+			margin: 100px auto;
+			box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+		}
+		h2 {
+			height: 40px;
+			font-size: 20px;
+			text-align: center;
+			line-height: 40px;
+		}
+		div {
+			height: 30px;
+			margin-left: 55px;
+			margin-top: 30px;
+
+		}
+		#user, #password {
+			width: 240px;
+			height: 23px;	
+		}
+		#submit, #reset {
+			margin-top: 40px;
+			margin-left: 68px;
+			width: 65px;
+
+		}
+		#reset {
+			margin-left: 50px;
+			margin-right: 10px;
+		}
+		a {
+			color: purple;
+			font-weight: bold;
+		}
+		a:hover {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form id="login">
+		<h2>系统登录</h2>
+		<hr>
+		<div>
+			<label>用户名:</label>
+			<input type="text" name="name" placeholder="请输入您的用户名!" id="user">
+		</div>
+		<div>
+			<label>密&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+			<input type="password" name="password" placeholder="请输入您的登录密码!" id="password">
+		</div>
+		<input type="submit" name="submit" value="登录" id="submit">
+		<input type="reset" name="reset" value="重置" id="reset">
+		<a href="register.html" title="">注册账户</a>
+	</form>
+</body>
+</html>

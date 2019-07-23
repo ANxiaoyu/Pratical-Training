@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: verdana,sans-serif;
+            font-size: 12px;
+            color: #555;
+            line-height: 160%;
+        }
+        .container {
+            width: 500px;
+            height: 642px;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+        }
+        span {
+            color: red;
+        }
+       ul {
+           list-style: none;
+        }
+        .button {
+          height: 58px;
+          padding-left: 118px;
+          text-align: left;
+        }
+        .button .a {
+            display: block;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            height: 35px;
+            width: 100%;
+            line-height: 35px;
+            text-align: center;
+            font-size: 14px;
+            background-color: #0066cc;
+            
+        }
+        .flag em {
+            display: inline-block;
+            background-position: 0 -825px;
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            margin-top: -5px;
+            width: 16px;
+            height: 11px;
+            background: url(https://reg.163.com/images2/flags.gif) no-repeat 9999px 9999px;
+        }
+        .ico-warn-sml {
+            width: 14px;
+            height: 14px;
+            background-position: -36px -288px;
+        }
+        .ico {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 0;
+            font-size: 0;
+            background: url(glb_v2.png) no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button">
+            <ul>
+                <li><a href="javascript:void(0)" class="a1">注册免费邮箱</a></li>
+                <li><a href="javascript:void(0)" class="a2">注册VIP邮箱</a></li>
+            </ul>
+        </div>
+        <div>
+            <label><span>*</span>邮件地址</label>
+            <input type="text" id="email"> @ 
+            <select name="" id="">
+                <option value="163.com">163.com</option>
+                <option value="126.com">126.com</option>
+                <option value="yeah.net">yeah.net</option>
+            </select>
+            <p class="text">6~18个字符，可使用字母、数字、下划线，需以字母开头</p>
+        </div>
+        <div>
+            <label for=""><span>*</span>密码</label>
+            <input type="password" id="pwd">
+            <p class="text">6~16个字符，区分大小写</p>
+        </div>
+        <div>
+            <label for=""><span>*</span>确认密码</label>
+            <input type="password" id="repwd">
+            <p class="text">请再次填写密码</p>
+        </div>
+        <div>
+            <div class="security">
+                <label for=""><span>*</span>验证码</label>
+                <input type="text" id="security">
+                <p class="text">请填写图片中的字符，不区分大小写</p>
+            </div>
+            <div class="img">
+                <img src="call.do.jpg" alt="" id="img">
+                <a href="#">看不清除？换张图片</a>
+            </div>
+        </div>
+        <div>
+            <label for=""><span>*</span>手机号码</label>
+            <input type="text" id="mobile">
+            <div class="flag flag-CN">
+                <em></em>
+            </div>
+            <p>
+                <span>
+                    <b class="ico ico-warn-sml"></b>
+                    请填写正确的手机号
+                </span>
+            </p>
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox">
+            同意
+            <a href="https://reg.163.com/agreement.shtml" target="_blank">"服务条款"</a>
+            和
+            <a href="https://reg.163.com/agreement_game.shtml" target="_blank">"隐私权相关政策"</a>
+        </div>
+        <div>
+            <a href="javascript:void(0)" class="btnReg">已发送短信验证,立即注册</a>
+        </div>
+    </div>
+</body>
+</html>
