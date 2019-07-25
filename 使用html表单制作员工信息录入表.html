@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        form div {
+            margin-left: 5px;
+            margin-top: 15px;
+        }
+        .submit {
+            margin-top: 15px;
+            background-color: #fff;
+            color: black;
+        }
+        label {
+            padding-right: 6px;
+        }
+        #gender1, #gender2 {
+            display: none;
+        }
+        label.man, label.woman {
+            position: relative;
+            margin-right: 30px;
+        }
+        label.man::before, label.woman::before {
+            display: inline-block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin-right: 6px;
+            vertical-align: bottom;
+        }
+        div>input:checked+label::before {
+            background-color: rgb(110, 150, 236);
+        }
+        div>input:checked+label::after {
+            display: inline-block;
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            background-color: white;
+        }
+        #state1, #state2 {
+            display: none;
+        }
+        label.on, label.leave {
+            position: relative;
+            margin-right: 30px; 
+        }
+        label.on::before, label.leave::before {
+            display: inline-block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin-right: 6px;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <h1>添加新员工</h1>
+    <form action="">
+        <div>
+            <label for="">员工姓名:</label>
+            <input type="text" name="text">
+        </div>
+        <div>
+            <label for="">初始密码:</label>
+            <input type="password" name="password" placeholder="1234">
+        </div>
+        <div>
+            <label for="">状态:</label>
+            <input type="radio" name="state" checked id="state1">
+            <label for="state1" class="on">在职</label>
+            <input type="radio" name="state" id="state2">
+            <label for="state2" class="leave">离职</label>
+        </div>
+        <div>
+            <label for="">员工等级:</label>
+            <select name="" id="">
+                <option value="" selected>门店-实习生</option>
+                <option value="">门店-正式员工</option>
+            </select>
+        </div>
+        <div>
+            <label for="">角色:</label>
+            <select name="" id="">
+                <option value="" selected>管理员</option>
+                <option value="">普通员工</option>
+                <option value="">经理</option>
+            </select>
+        </div>
+        <div>
+            <label for="">部门:</label>
+            <select name="" id="">
+                <option value="" selected>门店部</option>
+                <option value="">销售部</option>
+                <option value="">设计部</option>
+            </select>
+        </div>
+        <div>
+            <label for="">性别:</label>
+            <input type="radio" name="gender" id="gender1">
+            <label for="gender1" class="man">男</label>
+            <input type="radio" name="gender" checked id="gender2">
+            <label for="gender2" class="woman">女</label>
+        </div>
+        <div>
+            <label for="">住址:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">电话:</label>
+            <input type="text" name="mobile">
+        </div>
+        <div>
+            <label for="">所属店铺:</label>
+            <select name="" id="">
+                <option value="" selected>遵义体验店</option>
+                <option value="">武汉体验店</option>
+                <option value="">北京体验店</option>
+                <option value="">上海体验店</option>
+            </select>
+        </div>
+        <div>
+            <label for="">电子邮箱:</label>
+            <input type="text" name="mail">
+        </div>
+        <input type="submit" value="提交" class="submit">
+    </form>
+</body>
+</html>

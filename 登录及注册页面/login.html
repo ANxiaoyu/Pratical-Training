@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>login</title>
 	<style type="text/css" media="screen">
 		#login {
 			width: 450px;
 			height: 300px;
 			border: 1px solid black;
 			margin: 100px auto;
-			box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+			box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+			background-color: rgb(240, 239, 239);
+			position: relative;
 		}
 		h2 {
 			height: 40px;
@@ -25,7 +27,8 @@
 		}
 		#user, #password {
 			width: 240px;
-			height: 23px;	
+			height: 23px;
+			margin-left: 6px;	
 		}
 		#submit, #reset {
 			margin-top: 40px;
@@ -42,6 +45,39 @@
 			font-weight: bold;
 		}
 		a:hover {
+			cursor: pointer;
+		}
+		hr {
+			color: rgb(196, 192, 192);
+		}
+		.img1 {
+			width: 31px;
+			height: 32px;
+			position: absolute;
+			bottom: 2px;
+			right: 140px;
+			background-image: url(icons.png);
+			background-position: -1104px -848px;
+		}
+		.img2 {
+			position: absolute;
+			right: 90px;
+			bottom: 2px;
+			width: 30px;
+			height: 32px;
+			background-image: url(icons.png);
+			background-position: -977px -848px;
+		}
+		.img3 {
+			position: absolute;
+			right: 40px;
+			bottom: 2px;
+			width: 31px;
+			height: 32px;
+			background-image: url(icons.png);
+			background-position: -1104px -912px;
+		}
+		.img1:hover, .img2:hover, .img3:hover {
 			cursor: pointer;
 		}
 	</style>
@@ -61,6 +97,9 @@
 		<input type="submit" name="submit" value="登录" id="submit">
 		<input type="reset" name="reset" value="重置" id="reset">
 		<a href="register.html" title="">注册账户</a>
+		<div class="img1"></div>
+		<div class="img2"></div>
+		<div class="img3"></div>
 	</form>
 </body>
 </html>

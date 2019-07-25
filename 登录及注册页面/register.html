@@ -2,9 +2,183 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>register</title>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+		.container {
+			margin: 0 auto;
+			width: 560px;
+			height: 600px;
+			border: 1px solid gray;
+			background-color: rgb(240, 239, 239);
+			box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+			position: relative;
+		}
+		h2 {
+			height: 40px;
+			font-size: 20px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.title {
+			position: absolute;
+			top: 0px;
+			left: 95px;
+			width: 39px;
+			height: 51px;
+			background-image: url(icons.png);
+			background-position: -140px -1093px;
+		}
+		.img {
+			position: absolute;
+			width: 79px;
+			height: 58px;
+			right: 0;
+			top: 0;
+			background-image: url(icons.png);
+			background-position: -1064px -1509px;
+		}
+		.container label {
+			display: inline-block;
+			font-size: 14px;
+			width: 90px;
+			text-align: right;
+			margin-right: 15px;
+			margin-left: 40px;
+			margin-bottom: 25px;
+		}
+		#username, #pwd, #repwd {
+			width: 240px;
+			height: 20px;
+			border-radius: 3px;
+		}
+		#gender1, #gender2 {
+			display: none;
+		}
+		label.man, label.woman {
+			position: relative;
+			text-align: left;
+			font-size: 14px;
+		}
+		label.woman {
+			margin-left: -10px;
+		}
+		label.man::before, label.woman::before {
+			display: inline-block;
+			content: "";
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			border: 1px solid black;
+			margin-right: 6px;
+			vertical-align: bottom;
+		}
+		div>input:checked+label::before {
+			background-color: rgb(110, 150, 236);
+		}
+		div>input:checked+label::after {
+			display: inline-block;
+			content: "";
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			position: absolute;
+			left: 5px;
+			bottom: 5px;
+			background-color: white;
+		}
+		#profession {
+			width: 240px;
+			height: 23px;
+			border-radius: 3px;
+		}
+		.container .habby {
+			font-size: 14px;
+		}
+		textarea {
+			width: 240px;
+			height: 100px;
+		}
+		hr {
+			color: rgb(196, 192, 192);
+		}
+		#submit, #reset {
+			width: 70px;
+			
+		}
+		#submit {
+			margin-left: 100px;
+		}
+		#reset {
+			margin-left: 35px;
+		}
+		a {
+			color: purple;
+			margin-left: 8px;
+		}
+		.bottom {
+			margin-left: 30px;
+			margin-top: 25px;
+		}
+	</style>
 </head>
 <body>
-	注册账户
+	<div class="container">
+		<form action="">
+		<div class="title"></div>
+		<h2>用户注册</h2>
+		<div class="img"></div>
+		<div>
+			<label for="">用户名:</label>
+			<input type="text" name="text" id="username" placeholder="请输入您的用户名!">
+		</div>
+		<div>
+			<label for="">密&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+			<input type="password" name="password" id="pwd" placeholder="请输入您的密码!">
+		</div>
+		<div>
+			<label for="">重新输入密码:</label>
+			<input type="password" name="password" id="repwd" placeholder="请输入您的密码!">
+		</div>
+		<div>
+			<label for="">性&nbsp;&nbsp;&nbsp;&nbsp;别:</label>
+			<input type="radio" name="gender" id="gender1" checked>
+			<label for="gender1" class="man">男</label>
+			<input type="radio" name="gender" id="gender2">
+			<label for="gender2" class="woman">女</label>
+		</div>
+		<div>
+			<label for="">职&nbsp;&nbsp;&nbsp;&nbsp;业:</label>
+			<select name="" id="profession">
+				<option value="">学生</option>
+				<option value="">程序员</option>
+				<option value="">老师</option>
+				<option value="">厨师</option>
+				<option value="">快递员</option>
+			</select>
+		</div>
+		<div class="habby">
+			<label for="">爱&nbsp;&nbsp;&nbsp;&nbsp;好:</label>
+			<input type="checkbox" name="interest" id="interest">敲代码
+			<input type="checkbox" name="interest" id="interest">旅游
+			<input type="checkbox" name="interest" id="interest">看书
+			<input type="checkbox" name="interest" id="interest">跑步
+		</div>
+		<div>
+			<label for="">自我介绍:</label>
+			<textarea name="" id=""></textarea>
+		</div>
+		<hr>
+		<div class="bottom">
+			<input type="submit" value="注册" id="submit" name="submit">
+			<input type="reset" value="重置" id="reset" name="reset">
+			<a href="login.html">已有账户</a>
+		</div>
+	</form>
+</div>
+
 </body>
 </html>
