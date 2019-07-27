@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
-   
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <style>
         * {
             padding: 0;
@@ -21,13 +20,15 @@
             background-color: #fff;
             font-size: 12px;
             overflow: hidden;
+            padding: 0;
+           
         }
         .container .top {
             border-left: 7px solid #CB1A2F;
             margin-left: 21px;
             margin-top: 21px;
             width: 750px;
-           position: relative;
+            position: relative;
         }
         .container .top h2 {
             color: #CA0019;
@@ -35,18 +36,190 @@
             width: 100px;
             margin-left: 15px;
             letter-spacing: 3px;
+            
         }
         .container .top .search {
            position: absolute;
            right: 40px;
-           top: 5px;
-    
+           top: 1px;
+        }
+        .container .nar {
+            margin-top: 28px;
+        }
+        .container .nar ul {
+            list-style: none;
+            width: 800px;
+            background-color: #fcfbfc;
+            border-top: 2px solid #f6f6f6;
+            border-bottom: 2px solid #f6f6f6;
+            height: 35px;
+            line-height: 35px;
+            padding-left: 8px;
+        }
+        .container .nar ul li a {
+            text-decoration: none;
+            color: #230c18;
+            padding: 10px 10px;
+        }
+        .container .nar ul li {
+            float: left;
+            font-size: 12px;
+            font-family: 'Microsoft YaHei';
+            margin-left: 10px;
+        }
+        .container .nar ul li a.active {
+            background-color: #CB1A2F;
+            color: white;
+        }
+        .container .content {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .container .content .big_pic {
+            margin-top: 15px;
+        }
+        .content .text {
+            height: 140px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+        .content .text .txt_list {
+            width: 200px;
+            float: left;
+            margin-right: 54px;
+        }
+        .content .text .txt_list h2 {
+            font-family: '微软雅黑';
+            font-size: 14px;
+            margin-bottom: 15px;
+            height: 15px;
+            line-height: 15px;
+            font-weight: normal;
+        }
+        .content .text .txt_list .txt_more {
+            display: block;
+            color: black;
+            border: 1px solid rgb(206, 206, 206);
+            width: 50px;
+            text-align: center;
+            background-color: rgb(206, 206, 206);
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        .content .small_pic {
+            margin-top: 15px;
+        }
+        .content .big {
+            
+            height: 648px;
+        }
+        .content .big .left {
+            width: 500px;
+            float: left;
+        }
+        
+        .content .big .list h2 {
+            font-family: '微软雅黑';
+            font-size: 14px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        .content .big .left .list .item {
+            float: right;
+            width: 300px;
+            margin-right: 20px;
+        }
+        .content .big .left .list .item .more {
+            text-decoration: none;
+            display: block;
+            color: black;
+            border: 1px solid rgb(206, 206, 206);
+            width: 50px;
+            text-align: center;
+            background-color: rgb(206, 206, 206);
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .content .big .right {
+            width: 270px;
+            float: left;
+        }
+        .content .big .right ul {
+            list-style: none;
+        }
+        .content .big .right a {
+            text-decoration: none;
+        }
+        .content .big .right h2 {
+            font-family: '微软雅黑';
+            font-size: 14px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        .content .big .right .right_top ul li {
+            border-bottom: 1px solid #f2f1f2;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+        }
+        .content .big .right .right_top ul li a {
+            color: #b00000;
+        }
+        .content .big .right .right_bottom ul li {
+            margin-bottom: 20px;
+            color: gray;
+        }
+        .bottom {
+            border-top: 1px solid #efefef;
+            background-color: #f9f9f9;
+            height: 40px;
+            margin-top: 15px;
+            position: relative;
+        }
+        .bottom .qq {
+            width: 31px;
+            height: 31px;
+            background-image: url(images/icons.png);
+            background-position: -976px -848px;
+            margin-top: 4px;
+            margin-left: 20px;
+        }
+        .bottom .weixin {
+            position: absolute;
+            width: 31px;
+            height: 30px;
+            background-image: url(images/icons.png);
+            background-position: -1104px -849px;
+            left: 60px;
+            top: 4px;
+        }
+        .bottom .weibo {
+            position: absolute;
+            background-image: url(images/icons.png);
+            background-position: -1104px -912px;
+            width: 32px;
+            height: 32px;
+            top: 4px;
+            left: 99px;
+        }
+        .bottom .space {
+            position: absolute;
+            background-image: url(images/icons.png);
+            background-position: -1104px -720px;
+            width: 32px;
+            height: 31px;
+            top: 4px;
+            left: 137px;
+        }
+        .bottom .copy {
+            position: absolute;
+            right: 20px;
+            top: 10px;
         }
     </style>
-<link rel="stylesheet" href="bs/css/bootstrap.css">
-   <script src="bs/js/jquery-1.12.4.min.js"></script>
-   <script src="bs/js/bootstrap.js"></script>
-   
+     
 </head>
 <body>
     <div class="container">
@@ -54,21 +227,48 @@
             <h2>宋三胞胎</h2>
             <div class="search">
                 <input type="text" >
-                <button type="button" >
-                    <span class="glyphicon glyphicon-search"></span>
-                </button>
+                <i class="fa fa-search"></i>
             </div>
         </div>
-        <div class="nar"></div>
+        <div class="nar">
+            <ul>
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#">人物经历</a></li>
+                <li><a href="#">个人生活</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">评价</a></li>
+                <li><a href="#">视频</a></li>
+            </ul>
+        </div>
         <div class="content">
-            <div class="big_pic"></div>
-            <div class="text"></div>
-            <div class="small_pic"></div>
-            <div class="big">
+            <div class="big_pic">
+                <img src="images/合2.jpg" width="770" height="340" alt="">
+            </div>
+            <div class="text">
+                <div class="txt_list">
+                    <h2>大韩表情包</h2>
+                    <p>宋大韩表情包在Kakao Talk正式上线，表情包所有收入全额捐赠给绿色雨伞儿童财团，帮助生活环境恶劣的弱势儿童度过寒冷冬季；</p>
+                    <a href="" class="txt_more">更多</a>
+                </div>
+                <div class="txt_list">
+                    <h2>民国表情包</h2>
+                    <p>宋民国表情包在Kakao Talk正式上线，表情包所有收入全额捐赠给绿色雨伞儿童财团，帮助生活环境恶劣的弱势儿童度过寒冷冬季；</p>
+                    <a href="" class="txt_more">更多</a>
+                </div>
+                <div class="txt_list">
+                    <h2>万岁表情包</h2>
+                    <p>宋万岁表情包在Kakao Talk正式上线，表情包所有收入全额捐赠给绿色雨伞儿童财团，帮助生活环境恶劣的弱势儿童度过寒冷冬季；</p>
+                    <a href="" class="txt_more">更多</a>
+                </div>
+            </div>
+            <div class="small_pic">
+                <img src="images/small_pic.jpg" width="770" height="254" alt="">
+            </div>
+            <div class="big">       
                 <div class="left">
                     <div class="list">
                         <h2>宋大韩</h2>
-                        <a href="#"><img src="images/大1.jpg" alt=""></a>
+                        <a href="#"><img src="images/大1.jpg" width="150" height="150" alt=""></a>
                         <div class="item">
                             <p>宋大韩，2012年3月16日出生于韩国首尔特别市，韩国影视男演员宋一国的长子。2014年7月6日，因出演KBS 2TV真人亲子秀节目《超人回来了》而被大众熟知；9月17日，与父亲共同担任仁川亚运会火炬手；12月27日，出席KBS演艺大赏并获得人气赏。2016年1月10日，客串出演KBS史剧《蒋英实》；2月7日，在KBS真人秀《超人回来了》中下车。</p>
                             <a href="#" class="more">更多</a>
@@ -76,7 +276,7 @@
                     </div>
                     <div class="list">
                             <h2>宋民国</h2>
-                            <a href="#"><img src="images/民1.jpg" alt=""></a>
+                            <a href="#"><img src="images/民1.jpg" width="150" height="150" alt=""></a>
                             <div class="item">
                                 <p>宋民国，2012年3月16日出生于韩国首尔，韩国影视男演员宋一国的次子。2014年7月6日，因出演KBS 2TV真人亲子秀节目《超人回来了》而被大众熟知；9月17日，宋民国与父亲共同担任仁川亚运会火炬手；12月27日，出席KBS演艺大赏并获得人气赏。2016年1月10日，客串出演KBS史剧《蒋英实》；2月7日，在《超人回来了》中下车。</p>
                                 <a href="#" class="more">更多</a>
@@ -84,17 +284,62 @@
                         </div>
                         <div class="list">
                                 <h2>宋万岁</h2>
-                                <a href="#"><img src="images/万1.jpg" alt=""></a>
+                                <a href="#"><img src="images/万1.jpg" width="150" height="150" alt=""></a>
                                 <div class="item">
                                     <p>宋万岁，2012年3月16日出生于韩国首尔特别市，韩国影视男演员宋一国的第三个儿子。2014年7月6日，因出演KBS 2TV真人亲子秀节目《超人回来了》而被大众熟知；9月17日，宋万岁与父亲共同担任仁川亚运会火炬手；12月27日，出席KBS演艺大赏并获得人气赏。2016年1月10日，客串出演KBS史剧《蒋英实》；2月7日，在KBS真人秀《超人回来了》中下车。</p>
                                     <a href="#" class="more">更多</a>
                                 </div>
                             </div>
                 </div>
-                <div class="right"></div>
+                <div class="right">
+                    <div class="right_top">
+                        <h2>图片大全</h2>
+                        <ul>
+                            <li><a href="#">1958图片</a></li>
+                            <li><a href="#">宋大韩图片</a></li>
+                            <li><a href="#">宋民国图片</a></li>
+                            <li><a href="#">宋万岁图片</a></li>
+                            <li><a href="#">三胞胎近照</a></li>
+                            <li><a href="#">超人回来了</a></li>
+                        </ul>
+                    </div>
+                    <div class="right_bottom">
+                        <h2>三胞胎新闻</h2>
+                        <ul>
+                            <li>
+                                <span>2017-4-15</span>
+                                <p>1958一家移民法国</p>
+                            </li>
+                            <li>
+                                <span>2017-9-1</span>
+                                <p>三胞胎要上小学了！</p>
+                            </li>
+                            <li> 
+                                <span>2018-1-1</span>
+                                <p>三胞胎拍摄广告！</p>
+                            </li>
+                            <li>
+                                <span>2018-12-26</span>
+                                <p>三胞胎收到粉丝礼物</p>
+                            </li>
+                            <li>
+                                <span>2030-1-1</span>
+                                <p>参加电视拍摄！</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="bottom"></div>
+        <div class="bottom">
+            <div class="qq"></div>
+            <div class="weixin"></div>
+            <div class="weibo"></div>
+            <div class="space"></div>
+            <div class="copy">
+                Copyright&copy;2019.肖渝版权所有
+            </div>
+        </div>
     </div>
     
 </body>
