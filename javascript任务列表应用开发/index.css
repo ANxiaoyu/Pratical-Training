@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+.header {
+    width: 800px;
+    background-color: #369fd8;
+    height: 132px;
+    overflow: hidden;
+}
+.header h2 {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 22px;
+}
+.header #taskInput {
+    height: 33px;
+    width: 569px;
+    margin-left: 23px;
+    margin-top: 20px;
+}
+.header .add-task-btn {
+    height: 32px;
+    width: 149px;
+    text-align: center;
+    margin-left: 17px;
+}
+.content {
+    width: 800px;
+    background-color: #eee;
+}
+.content #taskList {
+    list-style: none;
+}
+.content #taskList li {
+    font-family: 'SimSun';
+    font-size: 14px;
+    line-height: 42px;
+    font-weight: bold;
+    margin-left: 32px;
+    position: relative;
+}
+.remove-task {
+    position: absolute;
+    right: 8px;
+}
+.remove-task:hover {
+    cursor: pointer;
+}
