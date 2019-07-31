@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    
+    font-size: 12px;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "宋体", Arial, Tahoma, Helvetica, Geneva, sans-serif;
+}
+header {
+    width: 100%;
+    clear: both;
+    background-color: #191d3a;
+    height: 58px;
+}
+header .top {
+    width: 910px;
+    height: 58px;
+    clear: both;
+    margin: auto;
+    background-color: #191d3a;
+}
+header .logo {
+    width: 225px;
+    float: left;
+    font-size: 1em;
+    color: #444866;
+}
+.logo a {
+    text-decoration: none;
+    color: #444866;
+    display: block;
+    width: 157px;
+    height: 35px;
+    background: url(images/logo.png) no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    margin: 10px 0 0 20px;
+}
+header .nav {
+    width: 650px;
+    float: left;
+}
+header .nav ul {
+    list-style: none;
+}
+header .nav ul li {
+    float: left;
+}
+header .nav ul li a {
+    text-decoration: none;
+    color: #818496;
+    font: 1.166em "Mircosoft YaHei","simhei";
+    float: left;
+    width: 85px;
+    height: 58px;
+    text-align: center;
+    line-height: 58px;
+    border-right: 1px solid #252947;
+    border-left: 1px solid #252947;
+    margin-left: -1px;
+}
+
+header .nav .current>a {
+    background-color: #252947;
+    color: #e2e4ed;
+}
+header .nav .joinus {
+    display: inline-block;
+    background-color: #38b774;
+    width: 98px;
+    height: 32px;
+    line-height: 32px;
+    margin: 12px 0 0 10px;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #3aca7a;
+    text-align: center;
+    font-size: 1.166em;
+}
+.bigImg {
+    background: url(images/博雅2.1.png) repeat-x center top;
+    height: 254px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.main {
+    width: 910px;
+    margin: auto;
+    clear: both;
+}
+.main .location {
+    height: 29px;
+    width: 910px;
+    padding: 25px 0 15px;
+    border-bottom: 1px solid #c7d6e5;
+}
+.main .location span {
+    float: right;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 4px;
+    color: #444866;
+}
+.main .location span a.home {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    background: url(images/home.png) no-repeat center 3px;
+}
+.main .location span em {
+    background: url(images/icon.png) no-repeat 0 -150px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 4px;
+    height: 8px;
+    line-height: 8px;
+    margin: 0 7px;
+    font-style: normal;
+    font-weight: normal;
+}
+.main .location span label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .location .game {
+    height: 29px;
+    line-height: 29px;
+    font-size: 20px;
+    color: #444866;
+    padding-left: 30px;
+    background: url(images/location.png) no-repeat 0 -94px;
+}
+.combox {
+    padding-bottom: 40px;
+}
+.combox .left {
+    float: left;
+    width: 143px;
+    padding-top: 40px;
+}
+.combox .left .glist {
+    list-style: none;
+    color: #444866;
+}
+.combox .left .glist li {
+    border-bottom: 1px solid #cad6e1;
+}
+.combox .left .glist li a {
+    text-decoration: none;
+    color: #444866;
+    display: block;
+    padding-left: 52px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 1.333em;
+    font-family: Arial;
+    width: 143px;
+    position: relative;
+}
+.combox .left .glist li.on {
+    background: url(images/arrow.png) no-repeat right center;
+}
+.combox .left .glist li a i {
+    position: absolute;
+    left: 0;
+    top: 23px;
+    height: 41px;
+    width: 34px;
+    background: url(images/pad.png) no-repeat;
+}
+.combox .left .glist li.on i {
+    background-position: -125px 0;
+}
+.combox .left .glist li a i.Android {
+    background-position: -4px -97px;
+}
+.combox .left .glist li a i.iPad {
+    background-position: 0 -199px;
+}
+.combox .left .glist li a i.PC {
+    background-position: 0 -295px;
+}
+.combox .left .glist li a i.TV {
+    background-position: 0 -602px;
+}
+.combox .right {
+    float: right;
+    width: 757px;
+    padding-top: 44px;
+}
+.combox .right .gright {
+    display: block;
+    width: 757px;
+    overflow: hidden;
+}
+.combox .right .gamelist {
+    list-style: none;
+    width: 110%;
+}
+.combox .right .gamelist li {
+    float: left;
+    margin-bottom: 42px;
+    margin-right: 43px;
+    width: 355px;
+    height: 327px;
+    border: 1px solid #cad6e1;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+.combox .right .gamelist li h3 {
+    height: 59px;
+    line-height: 59px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.333em;
+}
+.combox .right .gamelist li h3 a {
+    text-decoration: none;
+    color: #444866;
+}
+.combox .right .gamelist li h3  span {
+    text-transform: uppercase;
+    color: #38b774;
+    font-size: 12px;
+    font-family: Arial;
+    background: url(images/arrow.png) no-repeat right center;
+    padding-right: 1.166em;
+    margin-left: 4px;
+}
+.combox .right .gamelist .smallImg {
+    width: 331px;
+    height: 195px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+.combox .right .gamelist .smallImg img {
+    width: 331px;
+    height: 195px;
+    vertical-align: middle;
+    border: none;
+}
+.combox .right .gamelist .gamelink {
+    width: 331px;
+    height: 36px;
+    margin: auto;
+    
+}
+.combox .right .gamelist .gamelink .appstore {
+    float: left;
+    height: 36px;
+    width: 136px;
+    border-right: 1px solid #c7d6e5;
+    text-align: center;
+    
+}
+.combox .right .gamelist .gamelink .appstore a {
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    color: #444866;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 33px;
+    font-size: 1.166em;
+    font-family: Arial;
+    background: url(images/icon.png) no-repeat 0 -347px;
+}
+.combox .right .gamelist .gamelink .erweima {
+    float: left;
+    height: 36px;
+    width: 160px;
+    text-align: center;
+    position: relative;
+}
+.combox .right .gamelist .gamelink .erweima a {
+    text-decoration: none;
+    font-size: 1.166em;
+    color: #444866;
+    display: inline-block;
+    vertical-align: top;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    background: url(images/icon.png) no-repeat 0 -448px;
+}
+footer {
+    height: 180px;
+    width: 100%;
+    clear: both;
+}
+footer .footer1 {
+    height: 100px;
+    background-color: #252947;
+    color: #6c6e7e;
+    font-size: 12px;
+    padding-top: 20px;
+}
+footer .footer1 p {
+    line-height: 25px;
+    height: 25px;
+    margin-left: 160px;
+}
+footer .footer2 {
+    height: 80px;
+    background-color: #191d3a;
+}
+footer .footer2 .f1 a {
+    text-decoration: none;
+    color: #6c6e7e;
+}
+footer .footer2 .f1 {
+    display: block;
+    float: left;
+    margin-left: 160px;
+    margin-top: 37px;
+}
+footer .footer2 .f2 {
+    float: left;
+    display: block;
+    margin-top: 20px;
+    margin-left: 120px;
+    color: #6c6e7e;
+}
+footer .footer2 .f2 img {
+    vertical-align: middle;
+}

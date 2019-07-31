@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        /*
+            1题：检测是否是数字，包括整数，小数
+        */
+        var reg = /^[0-9]\.?\d*$/;
+        console.log(reg.test(0));
+        console.log(reg.test(1.2432));
+
+
+        /*
+            2题：检测是否是本地电话，如( (+ + 86) )0 0 27- - 12345678
+        */
+       var phoneReg = /^(\+86)?[0-9]{4}[1-9]{8}$/;
+       console.log(phoneReg.test("+86123412345678"));
+
+
+       /*
+            3题：检测是否是 2 2  到 4 4 位 位 英文字母
+       */
+      var engReg = /^[a-zA-Z]{22,44}$/;
+      console.log(engReg.test("zxcvbnmlkjhgfdsaqwertyu"));
+
+
+      /*
+            4题：验证用户输入的邮箱地址要满足 abc_12@cc. cc
+      */
+      var mailReg = /^[A-z1-9]\w+@[A-z1-9]+(\.)[A-z]+$/;
+      console.log(mailReg.test("abd_123@cc.cc"));
+
+      /*
+         5题：验证用户输入的  IP  地址要满足 255.255.255.255
+      */
+        var ipReg = /^(((\d{1,2})|(1\d{1,2})|(2[0-4]\d)|(25[0-5]))\.){3}((\d{1,2})|(1\d{1,2})|(2[0-4]\d)|(25[0-5]))$/;
+        console.log(ipReg.test("254.254.254.254"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
