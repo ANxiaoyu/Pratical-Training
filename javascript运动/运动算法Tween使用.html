@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="animate1.1.0.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: palevioletred;
+            position: absolute;
+            left: 50px;
+        }
+        .box1 {
+            top: 10px;
+        }
+        .box2 {
+            top: 100px;
+        }
+        .box3 {
+            top: 200px;
+        }
+        .box4 {
+            top: 300px;
+        }
+        .box5 {
+            top: 400px;
+        }
+    </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+  <div class="box5"></div>
+   <script>
+      /**
+       * t:当前动画运行的帧数（也就是说动画在哪一帧运动 frameCounts）
+       * b:当前运动对象的初始值（initValue）
+       * c:对象从开始运动到结束的运动变化量（totalChange）
+       * d:动画运行的总帧数(totalFrames)
+       * */ 
+    //   var divs = document.getElementsByTagName('div');
+    //   var frameCounts = 0;
+    //   var stepChange = 0;
+    //   var initValue = 50;
+    //   var totalChange = 900;
+    //   var totalFrames = 150;
+    //   var timer = setInterval(function(){
+    //       frameCounts++;
+    //       stepChange = Tween["Linear"](frameCounts, initValue, totalChange, totalFrames);
+    //       divs[0].style.left = initValue + stepChange + 'px';
+    //       stepChange = Tween["QuadEaseIn"](frameCounts, initValue, totalChange, totalFrames);
+    //       divs[1].style.left = initValue + stepChange + "px";
+    //       stepChange = Tween["BounceEaseIn"](frameCounts, initValue, totalChange, totalFrames);
+    //       divs[2].style.left = initValue + stepChange + "px";
+          
+    //       if(frameCounts > totalFrames) {
+    //           clearInterval(timer);
+    //       }
+    //   },20)
+
+
+    var divs = document.getElementsByTagName('div');
+    animate(divs[0], {"left": 900}, 3000, "BounceEaseIn", function(){
+        console.log("动画结束");
+    })
+   </script> 
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="animate1.0.1.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box1 {
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <script>
+        var box = document.getElementsByClassName('box1')[0];
+         /*   animate(box,{"left":500},3000);
+            animate(box,{"top":500},1000);
+            animate(box,{"left":50}, 3000);
+            animate(box, {"top":50}, 2000); */
+        // 同步（js代码从上向下执行的过程）vs 异步（定时器，ajax）
+        // 如果我们想在回调函数里面使用this代表当前运动对象，可以使用call、apply、bind
+        animate(box, {"left":500, "borderRadius":25}, 1000, function(){
+            animate(box, {"top":500, "borderRadius":0}, 1000, function(){
+                animate(box, {"left":50, "borderRadius":25}, 1000, function(){
+                    animate(box, {"top":50, "opacity":0.5}, 1000, function(){
+                        this.style.backgroundColor = "pink";
+                    })
+                })
+            })
+        })
+    </script>
+</body>
+</html>

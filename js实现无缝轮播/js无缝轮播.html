@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="animate1.0.0.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .box {
+            width: 400px;
+            height: 130px;
+            margin: 100px auto;
+            border: 1px solid pink;
+            position: relative;
+            overflow: hidden;
+        }
+        .move_box {
+            height: 130px;
+            width: 4000px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .move_box ul {
+            list-style: none;
+        }
+        .move_box ul li {
+            float: left;
+            width: 200px;
+            height: 130px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="move_box">
+            <ul>
+                <li><img src="images/0.png" alt=""></li>
+                <li><img src="images/1.png" alt=""></li>
+                <li><img src="images/2.png" alt=""></li>
+                <li><img src="images/3.png" alt=""></li>
+                <li><img src="images/4.png" alt=""></li>
+                <li><img src="images/5.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var box = document.getElementsByClassName('box')[0];
+        var move_box = document.getElementsByClassName('move_box')[0];
+        var ul = document.getElementsByTagName('ul')[0];
+        var lists = document.getElementsByTagName('li');
+
+        var len = lists.length;  // 获取lists的长度
+        ul.innerHTML += ul.innerHTML;  // 在原来的6张图片中再放6张
+        move();
+        var index = 0;
+        var timer;
+
+        box.onmouseover = function() {
+            clearInterval(timer);
+        }
+        box.onmouseleave = function() {
+            move();
+        }
+        function move() {
+            clearInterval(timer);
+             timer = setInterval(function(){
+                index++;
+                if(index > 6) {
+                    move_box.style.left = 0 +'px';
+                    index = 1;
+                }
+                animate(move_box, {"left":-200 *index}, 1000)
+            },1000)
+        }
+    </script>
+</body>
+</html>
