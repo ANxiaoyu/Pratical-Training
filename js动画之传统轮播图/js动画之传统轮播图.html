@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="animate2.0.0.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .carousel {
+            width: 560px;
+            height: 300px;
+            border: 1px solid red;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .move-box {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 3360px;
+            height: 300px;
+        }
+        .move-box ul {
+            list-style: none;
+        }
+        .move-box ul li {
+            width: 560px;
+            height: 300px;
+            float: left;
+        }
+        .carousel>a {
+            text-decoration: none;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            text-align: center;
+            border-radius: 10px;
+            font: 16px/20px "Microsoft Yahei";
+        }
+        .carousel>a.left-btn {
+            top: 50%;
+            margin-top: -10px;
+        }
+        .carousel>a.right-btn {
+            top: 50%;
+            margin-top: -10px;
+            right: 0px;
+        }
+        .circle {
+            width: 100px;
+            height: 15px;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            list-style: none;
+        }
+        .circle li {
+            float: left;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            margin-right: 5px;
+            background-color: green;
+            cursor: pointer;
+        }
+        .circle li.current {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="carousel" class="carousel">
+        <div id="move-box" class="move-box">
+            <ul>
+                <li><a href="#"><img src="images/0.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/1.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/4.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <a href="javascript:void(0)" id="left-btn" class="left-btn">&lt;</a>
+        <a href="javascript:void(0)" id="right-btn" class="right-btn">&gt;</a>
+        <ul id="circle" class="circle">
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+<script>
+    var carousel = document.getElementById('carousel');
+    var move_box = document.getElementById('move-box');
+    var ul = move_box.getElementsByTagName("ul")[0];
+    var move_lists = ul.getElementsByTagName('li');
+
+    ul.appendChild(move_lists[0].cloneNode(true));
+
+    var left_btn = document.getElementById('left-btn');
+    var right_btn = document.getElementById('right-btn');
+    var circle_ul = document.getElementById('circle');
+    var circle_lists = document.getElementsByTagName('li');
+
+    var move_lists_len = move_lists.length;
+
+    var options = {
+        "img_index":0,
+        "img_width":560,
+        "animate_time":1000,
+        "lists_length":move_lists_len-2,
+        "tween_string":""
+    }
+
+    var img_index = options.img_index;
+    // 给右按钮注册事件，先运动 再判断。假变真
+    right_btn.onclick = function() {
+        if(move_box.isanimated) return;
+        img_index++;
+        changeCircle();
+        animate(move_box, {"left": -options.img_width*img_index}, options.animate_time, options.tween_string, function(){
+            if(img_index > options.lists_length){
+                this.style.left = 0 + 'px';
+                img_index = 0;
+            }
+        });
+    }
+    // 给左按钮注册事件，先判断 再运动。真变假
+    left_btn.onclick = function() {
+        console.log(img_index);
+        if(move_box.isanimated) return;
+        img_index--;
+        if(img_index < 0) {
+            img_index = options.lists_length;
+            move_box.style.left = -options.img_width * (img_index+1) + 'px';
+        }
+        changeCircle();
+        animate(move_box, {"left": -options.img_width * img_index}, options.animate_time, options.tween_string, function(){
+            console.log("12");
+        })
+    }
+
+    for(var i = 0; i < circle_lists.length; i++) {
+        circle_lists[i].index = i;
+        circle_lists[i].onclick = function() {
+            img_index = this.index;
+            changeCircle();
+            animate(move_box, {"left": -options.img_width * this.index}, options.animate_time, options.tween_string, function(){
+                console.log("12");
+            });
+        }
+
+        // (function(m){
+        //     circle_lists[i].onclick = function() {
+        //         console.log("这是第"+m+"个li");
+        //     }
+        // })(i);
+    }
+
+    function changeCircle() {
+        var temp_index = img_index > options.lists_length ? 0 : img_index;
+        for(var i=0; i<circle_lists.length; i++){
+            circle_lists[i].className = "";
+        }
+        circle_lists[temp_index].className = "current";
+    }
+</script>
+</html>

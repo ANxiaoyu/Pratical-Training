@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cart</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="title">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">品牌</a></li>
+                <li><a href="#">设计师</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="cart-list">
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>
+                            <label for="">
+                                <input type="checkbox" id="selectAllProduct">全选
+                            </label>
+                        </th>
+                        <th>商品</th>
+                        <th>单价(￥)</th>
+                        <th>数量</th>
+                        <th>小计(￥)</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <footer class="cart-footer" id="cartFooter">
+                    <a href="#" class="fr delete-all-product" id="deleteAllProduct">删除所有商品</a>
+                    <div class="fr closing">结算</div>
+                    <div class="fr total">
+                        合计:￥<span id="selectedTotalAmount">0.00</span>
+                    </div>
+                    <div class="fr selected" id="selected">
+                        已选商品
+                        <span id="selectedTotalCount">0</span>件
+                    </div>
+                </footer>
+            </table>
+        </div>
+    </div>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
