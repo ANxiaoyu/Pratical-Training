@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>cart</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -33,23 +34,39 @@
                     </tr>
                 </thead>
                 <tbody>
-
-                </tbody>
-                <footer class="cart-footer" id="cartFooter">
-                    <a href="#" class="fr delete-all-product" id="deleteAllProduct">删除所有商品</a>
-                    <div class="fr closing">结算</div>
-                    <div class="fr total">
-                        合计:￥<span id="selectedTotalAmount">0.00</span>
-                    </div>
-                    <div class="fr selected" id="selected">
-                        已选商品
-                        <span id="selectedTotalCount">0</span>件
-                    </div>
-                </footer>
+                    <tr>
+                        <td><input type="checkbox" name="productCheck"></td>
+                        <td class="cart-product-name">
+                            <img src="images/small1.png" alt="">
+                            <span>针织衫</span>
+                        </td>
+                        <td class="cart-product-price">398</td>
+                        <td class="cart-product-count">
+                            <span class="reduct">-</span>
+                            <input type="text" class="count-input" value="1">
+                            <span class="add">+</span>
+                        </td>
+                        <td class="cart-product-subtotal">390</td>
+                        <td class="cart-product-operation">
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr>
+                </tbody>              
             </table>
+            <footer class="cart-footer" id="cartFooter">
+                <a href="#" class="fr delete-all-product" id="deleteAllProduct">删除所有商品</a>
+                <div class="fr closing">结算</div>
+                <div class="fr total">
+                    合计:￥<span id="selectedTotalAmount">0.00</span>
+                </div>
+                <div class="fr selected" id="selected">
+                    已选商品
+                    <span id="selectedTotalCount">0</span>件
+                </div>
+            </footer>
         </div>
     </div>
     <script src="jquery-3.4.1.js"></script>
-    <script src="cart.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>

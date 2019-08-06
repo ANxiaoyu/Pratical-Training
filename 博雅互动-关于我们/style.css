@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 12px;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "宋体", Arial, Tahoma, Helvetica, Geneva, sans-serif;
+}
+header {
+    width: 100%;
+    clear: both;
+    background-color: #191d3a;   
+    height: 58px;
+}
+ .area {
+    width: 1000px;
+    margin: auto;
+    clear: both;
+    color: #444866;
+}
+header .area .logo {
+    float: left;
+    width: 225px;
+    font-size: 1em;
+    margin: 0;
+}
+header .area .logo a {
+    text-decoration: none;
+    color: #444866;
+    cursor: pointer;
+    display: block;
+    width: 157px;
+    height: 35px;
+    background: url(images/logo.png) no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    margin: 10px 0 0 20px;
+}
+header .area .nav {
+    float: left;
+    width: 650px;
+}
+header .area nav > a {
+    text-decoration: none;
+    float: left;
+    width: 85px;
+    height: 58px;
+    text-align: center;
+    font: 1.166em/58px "Microsoft YaHei", "simhei";
+    color: #818496;
+    border-left: 1px solid #252947;
+    border-right: 1px solid #252947;
+    margin-right: -1px;
+}
+header .area nav a:hover {
+    color: #e2e4ed;
+}
+header .area nav > a.current {
+    color: #e2e4ed;
+    background-color: #252947;
+}
+header .area nav > a.joinus {
+    display: inline-block;
+    margin: 12px 0 0 10px;
+    height: 32px;
+    line-height: 32px;
+    width: 98px;
+    border: 1px solid #3aca7a;
+    border-radius: 3px;
+    background-color: #3aca7a;
+    font-size: 1.166em;
+    color: #fff;
+    text-align: center;
+}
+header .area .changeLang {
+    line-height: 58px;
+    display: inline-block;
+    float: right;  
+}
+header .area .changeLang span {
+    padding-left: 20px;
+}
+header .area .changeLang span a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #444866;
+}
+header .area .changeLang .china {
+    color: #38b774;
+    margin-right: 10px;
+}
+.aboutbanner {
+    width: 100%;
+    background: #fffaf4 url(images/aboutbanner.jpg) repeat-x center top;
+    height: 254px;
+}
+.area .location {
+    height: 29px;
+    padding: 25px 0 15px;
+    border-bottom: 1px solid #c7d6e5;
+}
+.area .location .qlink {
+    float: right;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 4px;
+    color: #444866
+}
+.area .location .qlink a {
+    text-decoration: none;
+    color: #444866;
+    display: inline-block;
+    vertical-align: middle;
+}
+.area .location .qlink a.home {
+    width: 20px;
+    height: 20px;
+    background: url(images/home.png) no-repeat center 3px;;
+}
+.area .location .qlink em {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(images/icon.png) no-repeat 0 -150px;
+    width: 4px;
+    height: 8px;
+    line-height: 8px;
+    margin: 0 7px;
+}
+.area .location .qlink label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.area .location h2 {
+    line-height: 29px;
+    font-size: 20px;
+    color: #444866;
+    padding-left: 30px;
+    height: 29px;
+    background: url(images/location.png) no-repeat 0 -44px;
+}
+.areabox {
+    padding-bottom: 40px;
+}
+.areabox .left {
+    float: left;
+    width: 230px;
+    padding-top: 40px;
+}
+.areabox .swiper-container {
+    overflow: hidden;
+    height: 460px;
+}
+.areabox .swiper-wrapper {
+    width: auto;
+    height: auto;
+    list-style: none;
+}
+.areabox .swiper-slide {
+    border-bottom: 1px solid #c7d6e5;
+    width: auto;
+}
+.areabox .left li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+    color: #444866;
+}
+.areabox .left li.current a {
+    color: #38b774;
+}
+.areabox .left li h3 {
+    font-size: 1.333em;
+}
+.areabox .left li.current h3 {
+    background: url(images/arrow.png) no-repeat right center;
+}
+.areabox .left li em {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+}
+.areabox .right {
+    float: right;
+    width: 732px;
+    padding-top: 40px;
+}
+.areabox .right .about {
+    color: #444866;
+    display: block;
+}
+.areabox .right .about p {
+    text-indent: 28px;
+    margin-bottom: 30px;
+    line-height: 2.4;
+    font-size: 1.166em;
+}
+footer {
+    background-color: #191d3a;
+    width: 100%;
+    clear: both;
+    line-height: 50px;
+}
+footer .area {
+    padding: 20px 0;
+    display: block;
+    color: #6c6e7e;
+}
+footer nav p {
+    height: 50px;
+}
+footer nav a {
+    text-decoration: none;
+    color: #6c6e7e;
+}
+footer .area p span.f2 {
+    vertical-align: top;
+}
+.gotop {
+    text-decoration: none;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 75px;
+    width: 68px;
+    height: 29px;
+    background: url(images/top.png) no-repeat 0 -40px;
+    z-index: 999;
+}
+.development dt {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+    background: url(images/icon.png) no-repeat 0 -80px;
+    
+}
+.development dd {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font: 1.166em/2.6 "Microsoft YaHei";
+}
+.development .cgreen {
+    font-weight: bold;
+    color: #38b774;
+}
