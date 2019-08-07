@@ -165,6 +165,9 @@ header .area .changeLang .china {
     padding: 15px 0;
     color: #444866;
 }
+.areabox .left li a:hover {
+    color: #38b774;
+}
 .areabox .left li.current a {
     color: #38b774;
 }
@@ -226,6 +229,9 @@ footer .area p span.f2 {
     background: url(images/top.png) no-repeat 0 -40px;
     z-index: 999;
 }
+.gotop:hover {
+    background-position: 0 0;
+}
 .development dt {
     font-size: 18px;
     font-weight: bold;
@@ -241,4 +247,110 @@ footer .area p span.f2 {
 .development .cgreen {
     font-weight: bold;
     color: #38b774;
+}
+.about h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 2;
+}
+.about .p_content h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #c7d6e5;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+.about .p_content p {
+    text-indent: 28px;
+    margin-bottom: 30px;
+    line-height: 2.4;
+    font-size: 1.166em;
+}
+.about .p_content .worldmap {
+    padding: 20px 0;
+    border-bottom: 1px solid #c7d6e5;
+    margin-bottom: 30px;
+}
+.about .p_content .worldmap img {
+    width: 730px;
+    vertical-align: middle;
+}
+.about .p_content h5 {
+    margin-left: 28px;
+    padding-left: 17px;
+    background: url(images/dot.png) no-repeat 0 4px;
+    font-size: 1em;
+}
+.about .p_content .gameplat {
+    width: 730px;
+    overflow: hidden;
+}
+.about .p_content .gameplat ul {
+    list-style: none;
+}
+.about .p_content .gameplat ul li {
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    text-align: center;
+}
+.about .p_content .gameplat ul li img {
+    width: 127px;
+    height: 45px;
+}
+.culture ul {
+    list-style: none;
+}
+.culture ul li {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #c7d6e5;
+    height: 100px;
+}
+.culture ul li .culicon {
+    float: left;
+    width: 110px;
+    text-align: center;
+}
+.culture ul li .culicon i {
+    display: inline-block;
+    width: 97px;
+    height: 97px;
+    background: url(images/cul_icon.png) no-repeat;
+}
+.culture ul li .culinfo {
+    float: right;
+    width: 575px;
+}
+.culture ul li .culinfo h5 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.culture ul li .culinfo h5 em {
+    color: #f39800;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+}
+.culture ul li .culinfo p {
+    line-height: 2;
+    font-size: 1.166em;
+}
+.culture ul li.cul2 i {
+    background-position: 0 -250px;
+}
+.culture ul li.cul2 h5 em {
+    color: #38b774;
+}
+.culture ul li.cul3 i {
+    background-position: 0 -500px;
+}
+.culture ul li.cul3 h5 em {
+    color: #6672ca;
+}
+.culture ul li.cul4 i {
+    background-position: 0 -750px;
+}
+.culture ul li.cul4 h5 em {
+    color: #da6c54;
 }

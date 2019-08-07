@@ -52,7 +52,7 @@
 
             <section class="area areabox">
                 <section class="left">
-                    <nav class="swiper-container">
+                    <nav class="swiper-container catebox">
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide current" name="0">
                                 <a href="javascript:;">
@@ -191,6 +191,88 @@
                             </dd>
                         </dl>
                     </article>
+
+                    <article class="about p_about">
+                        <div>
+                            <h2>产品覆盖国家和地区</h2>
+                            <div class="p_content">
+                                <h3>International Footprint</h3>
+                                <p>博雅透过多元化的游戏分销平台，向玩家宣传及推广网页和移动游戏。网页游戏主要通过社交网站及网页游戏门户网站，以及博雅自己的游戏门户网站进行分销；移动游戏则通过网上应用商店及区域性网络游戏门户网站进行分销。</p>
+                                <p>博雅高质量的游戏被业内主流的分销平台认可，而与顶尖平台的合作，也确保了博雅游戏产品的可持续性和玩家的长期活跃度。同时，多元化的推广平台，有助于博雅游戏的全球市场推广及宣传。此外，博雅不依赖于任何单一平台，多渠道的均衡发展大幅降低了公司运营和推广的风险。</p>
+                                <div class="worldmap">
+                                    <img src="images/map.png" alt="">
+                                    <p>博雅互动用户覆盖全球100多个国家和地区，包含中国大陆地区、港澳台地区、东南亚地区、欧洲地区、中东阿拉伯地区以及美洲地区等。公司的明星游戏产品也拥有中文、英语、德语、泰语、印尼语、阿拉伯语、西班牙语等17种语言版本。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>主要合作伙伴</h2>
+                            <div class="p_content">
+                                <h3>Main Partners</h3>
+                                <p>公司网页游戏主要依靠游戏分销平台进行推广和发布，其中包括社交网站和网络游戏门户网站的游戏分销平台，以及全球性和区域性的网上应用商店及网络游戏的门户网站。</p>
+                                <h5>主要的游戏分销平台：</h5>
+                                <div class="gameplat">
+                                    <ul class="cl">
+                                        <li><img src="images/platform1.png" alt=""></li>
+                                        <li><img src="images/platform2.png" alt=""></li>
+                                        <li><img src="images/platform3.png" alt=""></li>
+                                        <li><img src="images/platform4.png" alt=""></li>
+                                        <li><img src="images/platform5.png" alt=""></li>
+                                        <li><img src="images/platform6.png" alt=""></li>
+                                        <li><img src="images/platform7.png" alt=""></li>
+                                        <li><img src="images/platform8.png" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--产业文化-->
+                    <article class="culture p_about">
+                        <ul>
+                            <li class="cul1 cl">
+                                <div class="culicon">
+                                    <i></i>
+                                </div>
+                                <div class="culinfo">
+                                    <h5><em>愿景:</em>无处不在，分享快乐</h5>
+                                    <p>我们力争成为世界前列的游戏公司，随时随地给人们提供无尽的快乐，享受无处不在的开心</p>
+                                </div>
+                            </li>
+                            <li class="cul2 cl">
+                                <div class="culicon">
+                                    <i></i>
+                                </div>
+                                <div class="culinfo">
+                                    <h5><em>使命:</em>为用户创造高品质的游戏体验</h5>
+                                    <p>为用户创造具备优质和完美体验的游戏产品是博雅人永恒的追求</p>
+                                </div>
+                            </li>
+                            <li class="cul3 cl">
+                                <div class="culicon">
+                                    <i></i>
+                                </div>
+                                <div class="culinfo">
+                                    <h5><em>价值观:</em>关爱 共赢 勇于创新 全力以赴</h5>
+                                    <p>待人真诚，彼此包容，为人正直，懂得感恩，一起营造一个轻松快乐的大家庭。</p>
+                                    <p>关注同事成长，和博雅一起进步；关注用户，用户价值至上，提供公平公正的游戏环境。</p>
+                                    <p>提倡敢想敢做，鼓励大胆创新，追求卓越。</p>
+                                    <p>每个人都是公司的主人翁，主动积极，寻求突破，每一件事情都能全力以赴。</p>
+                                </div>
+                            </li>
+                            <li class="cul4 cl">
+                                <div class="culicon">
+                                    <i></i>
+                                </div>
+                                <div class="culinfo">
+                                    <h5><em>管理理念:</em>共同成长 打造学习型团队</h5>
+                                    <p>心有多大，舞台就有多大</p>
+                                    <p>以人为本，鼓励每个人的想法，主动积极、想到就做、勇于冒险、不怕犯错、无限去探讨可能性。</p>
+                                    <p>强化执行能力，攻必克，战必胜，每个人都是公司的主人翁，有必胜的决心。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
                 </section>
             </section>
         </section>
@@ -213,7 +295,10 @@
         $(document).ready(function(){
             $(".catebox").find('li').click(function(){
                 $(this).addClass('current').siblings().removeClass('current');
-                
+                var _index = parseFloat($(this).attr('name'));
+                $('.p_about').eq(_index).css('display','block').siblings().css('display','none');
+                var _text = $('.catebox li.current h3').text();
+                $('.location label').text(_text);
             })
         })
     </script>

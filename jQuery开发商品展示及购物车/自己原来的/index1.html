@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery购物网站加入购物车产品展示</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="title">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">品牌</a></li>
+                <li><a href="#">设计师</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="left">
+                <div class="car">
+                    <span class="smallcar">购物车</span>
+                    <img src="images/icon车.png" width="15" height="16" alt="">
+                    <a href="#" class="pay">结帐</a>
+                    <i>购物车没有物品</i>
+                    <ul id="cart">
+                        <li>
+                            <img src="images/small1.png" width="40" height="45" alt="">
+                            <span class="shan">针织衫</span>
+                            <span class="price">390</span>
+                        </li>
+                        <li>
+                            <img src="images/small2.png" width="40" height="45" alt="">
+                            <span class="shan">毛线衫</span>
+                            <span class="price">200</span>
+                        </li>
+                        <li>
+                            <img src="images/small3.png" width="40" height="45" alt="">
+                            <span class="shan">衬衫裙</span>
+                            <span class="price">139</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="type">
+                    <h4>类别</h4>
+                    <ul>
+                        <li><input type="checkbox" name="checkbox" class="checkbox">饰品</li>
+                        <li><input type="checkbox" name="checkbox" class="checkbox">鞋子</li>
+                        <li><input type="checkbox" name="checkbox" class="checkbox">包包</li>
+                        <li><input type="checkbox" name="checkbox" class="checkbox">衬衫</li>
+                        <li><input type="checkbox" name="checkbox" class="checkbox">外套</li>
+                        <li><input type="checkbox" name="checkbox" class="checkbox">毛衣</li>
+                        <li><input type="checkbox" name="checkbox" class="checkbox">夹克</li>
+                        <li><input type="checkbox" name="checkbox" class="checkbox">T恤</li>
+                        <li><input type="checkbox" name="checkbox" class="checkbox">珠宝</li>
+                        <li><input type="checkbox" name="checkbox" class="checkbox">裙子</li>
+                    </ul>   
+                </div>
+                <div class="color">
+                    <h4>颜色</h4>
+                    <ul>
+                        <li>米色</li>
+                        <li>灰色</li>
+                        <li>黑色</li>
+                        <li>橙色</li>
+                        <li>蓝色</li>
+                        <li>紫色</li>
+                        <li>棕色</li>
+                        <li>红色</li>
+                        <li>绿色</li>
+                        <li>白色</li>
+                    </ul>
+                </div>
+                <div class="size">
+                    <h4>尺寸</h4>
+                    <ul>
+                        <li><input type="checkbox" name="checkbox" class="size_check">XS</li>
+                        <li><input type="checkbox" name="checkbox" class="size_check">L</li>
+                        <li><input type="checkbox" name="checkbox" class="size_check">S</li>
+                        <li><input type="checkbox" name="checkbox" class="size_check">XL</li>
+                        <li><input type="checkbox" name="checkbox" class="size_check">M</li>
+                        <li><input type="checkbox" name="checkbox" class="size_check">XXL</li>
+                    </ul>   
+                </div>
+            </div>
+            <div class="right">
+                <div class="nar">
+                    <span class="nar_left">首页/产品列表/女士上衣</span>
+                    <div class="nar_right">
+                        <span>查看:</span>
+                        <img src="images/icon1.png" width="15" height="15" alt="">
+                        <img src="images/icon2.png" width="15" height="15" alt="">
+                    </div>                  
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <img src="images/1.png" width="205" height="260" alt="">
+                            <div class="li_bottom">
+                                <span class="name1">￥ 针织衫</span>
+                                <span class="list_price">390</span>
+                                <span class="summar">夏天衣服</span>
+                            </div>  
+                        </li>
+                        <li>
+                            <img src="images/2.png" width="205" height="260" alt="">
+                            <div class="li_bottom">
+                                <span class="name1">￥ 毛线衫</span>
+                                <span class="list_price">200</span>
+                                <span class="summar">夏天衣服</span>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <img src="images/3.png" width="205" height="260" alt="">
+                            <div class="li_bottom">
+                                <span class="name1">￥ 衬衫裙</span>
+                                <span class="list_price">139</span>
+                                <span class="summar">夏天衣服</span>
+                            </div>                         
+                        </li>
+                        <li>
+                            <img src="images/4.png" width="205" height="260" alt="">
+                            <div class="li_bottom">
+                                <span class="name1">￥ 高领套衫</span>
+                                <span class="list_price">399</span>
+                                <span class="summar">夏天衣服</span>
+                            </div>                           
+                        </li>
+                        <li>
+                            <img src="images/5.png" width="205" height="260" alt="">
+                            <div class="li_bottom">
+                                <span class="name1">￥ 中性卫衣</span>
+                                <span class="list_price">309</span>
+                                <span class="summar">夏天衣服</span>
+                            </div>                        
+                        </li>
+                        <li>
+                            <img src="images/6.png" width="205" height="260" alt="">
+                            <div class="li_bottom">
+                                <span class="name1">￥ 套头针织衫</span>
+                                <span class="list_price">390</span>
+                                <span class="summar">夏天衣服</span>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

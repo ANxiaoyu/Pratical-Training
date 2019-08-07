@@ -4,154 +4,376 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>jQuery购物网站加入购物车产品展示</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="jquery-3.4.1.js"></script>
-    <script src="js/index.js"></script>
 </head>
 <body>
-    <div class="container">
-        <nav class="title">
+    <div id="wrapper">
+        <div class="cart-icon-top"></div>
+        <div class="cart-icon-bottom"></div>
+        <header id="header">
             <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">品牌</a></li>
-                <li><a href="#">设计师</a></li>
-                <li><a href="#">联系我们</a></li>
+                <li><a href="#!">首页</a></li>
+                <li><a href="#!">品牌</a></li>
+                <li><a href="#!">设计师</a></li>
+                <li><a href="#!">联系我们</a></li>
             </ul>
-        </nav>
-        <div class="content">
-            <div class="left">
-                <div class="car">
-                    <span class="smallcar">购物车</span>
-                    <img src="images/icon车.png" width="15" height="16" alt="">
-                    <a href="#" class="pay">结帐</a>
-                    <i>购物车没有物品</i>
-                    <ul id="cart">
-                        <li>
-                            <img src="images/small1.png" width="40" height="45" alt="">
-                            <span class="shan">针织衫</span>
-                            <span class="price">390</span>
-                        </li>
-                        <li>
-                            <img src="images/small2.png" width="40" height="45" alt="">
-                            <span class="shan">毛线衫</span>
-                            <span class="price">200</span>
-                        </li>
-                        <li>
-                            <img src="images/small3.png" width="40" height="45" alt="">
-                            <span class="shan">衬衫裙</span>
-                            <span class="price">139</span>
-                        </li>
-                    </ul>
+        </header>
+        <aside id="sidebar">
+            <h3>购物车</h3>
+            <div id="checkout"><a href="cart.html">结账</a></div>
+            <div id="cart">
+                <span class="empty">购物车没有物品</span>
+
+                <div class="cart-item">
+                    <div class="img-wrap"><img src="images/1.jpg" alt=""></div>
+                    <div class="box"><span class="name">针织衫</span><span class="total">1</span></div>
+                    <strong class="price">390</strong>
                 </div>
-                <div class="type">
-                    <h4>类别</h4>
-                    <ul>
-                        <li><input type="checkbox" name="checkbox" class="checkbox">饰品</li>
-                        <li><input type="checkbox" name="checkbox" class="checkbox">鞋子</li>
-                        <li><input type="checkbox" name="checkbox" class="checkbox">包包</li>
-                        <li><input type="checkbox" name="checkbox" class="checkbox">衬衫</li>
-                        <li><input type="checkbox" name="checkbox" class="checkbox">外套</li>
-                        <li><input type="checkbox" name="checkbox" class="checkbox">毛衣</li>
-                        <li><input type="checkbox" name="checkbox" class="checkbox">夹克</li>
-                        <li><input type="checkbox" name="checkbox" class="checkbox">T恤</li>
-                        <li><input type="checkbox" name="checkbox" class="checkbox">珠宝</li>
-                        <li><input type="checkbox" name="checkbox" class="checkbox">裙子</li>
-                    </ul>   
-                </div>
-                <div class="color">
-                    <h4>颜色</h4>
-                    <ul>
-                        <li>米色</li>
-                        <li>灰色</li>
-                        <li>黑色</li>
-                        <li>橙色</li>
-                        <li>蓝色</li>
-                        <li>紫色</li>
-                        <li>棕色</li>
-                        <li>红色</li>
-                        <li>绿色</li>
-                        <li>白色</li>
-                    </ul>
-                </div>
-                <div class="size">
-                    <h4>尺寸</h4>
-                    <ul>
-                        <li><input type="checkbox" name="checkbox" class="size_check">XS</li>
-                        <li><input type="checkbox" name="checkbox" class="size_check">L</li>
-                        <li><input type="checkbox" name="checkbox" class="size_check">S</li>
-                        <li><input type="checkbox" name="checkbox" class="size_check">XL</li>
-                        <li><input type="checkbox" name="checkbox" class="size_check">M</li>
-                        <li><input type="checkbox" name="checkbox" class="size_check">XXL</li>
-                    </ul>   
-                </div>
+
+                <div class="ct-cart"></div>
             </div>
-            <div class="right">
-                <div class="nar">
-                    <span class="nar_left">首页/产品列表/女士上衣</span>
-                    <div class="nar_right">
-                        <span>查看:</span>
-                        <img src="images/icon1.png" width="15" height="15" alt="">
-                        <img src="images/icon2.png" width="15" height="15" alt="">
-                    </div>                  
-                </div>
-                <div class="list">
+            <h3>类别</h3>
+            <div class="checklist categories">
+                <ul>
+                    <li><a href="#!"><span></span>饰品</a></li>
+                    <li><a href="#!"><span></span>包包</a></li>
+                    <li><a href="#!"><span></span>外套</a></li>
+                    <li><a href="#!"><span></span>夹克</a></li>
+                    <li><a href="#!"><span></span>珠宝</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#!"><span></span>鞋子</a></li>
+                    <li><a href="#!"><span></span>衬衫</a></li>
+                    <li><a href="#!"><span></span>毛衣</a></li>
+                    <li><a href="#!"><span></span>T恤</a></li>
+                    <li><a href="#!"><span></span>裙子</a></li>
+                </ul>
+            </div>
+            <h3>颜色</h3>
+            <div class="checklist colors">
+                <ul>
+                    <li><a href="#!"><span style="background: #eae3d3"></span>米色</a></li>
+                    <li><a href="#!"><span style="background: #222"></span>黑色</a></li>
+                    <li><a href="#!"><span style="background: #6e8cd5"></span>蓝色</a></li>
+                    <li><a href="#!"><span style="background: #f56060"></span>棕色</a></li>
+                    <li><a href="#!"><span style="background: #44c28d"></span>绿色</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#!"><span style="background: #999"></span>灰色</a></li>
+                    <li><a href="#!"><span style="background: #f79858"></span>橙色</a></li>
+                    <li><a href="#!"><span style="background: #b27ef8"></span>紫色</a></li>
+                    <li><a href="#!"><span style="background: #f56060"></span>红色</a></li>
+                    <li><a href="#!"><span style="background: #fff; border: 1px solid #e8e9eb; width: 13px; height: 13px;"></span>白色</a></li>
+                </ul>
+            </div>
+            <h3>尺寸</h3>
+            <div class="checklist sizes">
+                <ul>
+                    <li><a href="#!"><span></span>XS</a></li>
+                    <li><a href="#!"><span></span>S</a></li>
+                    <li><a href="#!"><span></span>M</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#!"><span></span>L</a></li>
+                    <li><a href="#!"><span></span>XL</a></li>
+                    <li><a href="#!"><span></span>XXL</a></li>
+                </ul>
+            </div>
+            <h3>价格区间</h3>
+            <img src="images/price-range.png" alt="">
+        </aside>
+        <div id="grid">
+            <div id="gridSelector" class="grid-selector">
+                <div class="grid-menu">
+                    查看:
                     <ul>
-                        <li>
-                            <img src="images/1.png" width="205" height="260" alt="">
-                            <div class="li_bottom">
-                                <span class="name1">￥ 针织衫</span>
-                                <span class="list_price">390</span>
-                                <span class="summar">夏天衣服</span>
-                            </div>  
-                        </li>
-                        <li>
-                            <img src="images/2.png" width="205" height="260" alt="">
-                            <div class="li_bottom">
-                                <span class="name1">￥ 毛线衫</span>
-                                <span class="list_price">200</span>
-                                <span class="summar">夏天衣服</span>
-                            </div>
-                            
-                        </li>
-                        <li>
-                            <img src="images/3.png" width="205" height="260" alt="">
-                            <div class="li_bottom">
-                                <span class="name1">￥ 衬衫裙</span>
-                                <span class="list_price">139</span>
-                                <span class="summar">夏天衣服</span>
-                            </div>                         
-                        </li>
-                        <li>
-                            <img src="images/4.png" width="205" height="260" alt="">
-                            <div class="li_bottom">
-                                <span class="name1">￥ 高领套衫</span>
-                                <span class="list_price">399</span>
-                                <span class="summar">夏天衣服</span>
-                            </div>                           
-                        </li>
-                        <li>
-                            <img src="images/5.png" width="205" height="260" alt="">
-                            <div class="li_bottom">
-                                <span class="name1">￥ 中性卫衣</span>
-                                <span class="list_price">309</span>
-                                <span class="summar">夏天衣服</span>
-                            </div>                        
-                        </li>
-                        <li>
-                            <img src="images/6.png" width="205" height="260" alt="">
-                            <div class="li_bottom">
-                                <span class="name1">￥ 套头针织衫</span>
-                                <span class="list_price">390</span>
-                                <span class="summar">夏天衣服</span>
-                            </div>
-                            
-                        </li>
+                        <li class="large-grid"><a href="#!"></a></li>
+                        <li class="small-grid"><a href="#!" class="active"></a></li>
                     </ul>
                 </div>
+                首页/产品列表/女士上衣
             </div>
+
+            <!-- 商品信息 -->
+            <section class="product">
+                <div class="info-large">
+                    <h4>针织衫</h4>
+                    <div class="code">产品的编号: <strong>89356</strong></div>
+                    <div class="price-big"><span>￥</span><span>430</span> ￥390</div>
+                    <h3>颜色</h3>
+                    <div class="colors-large">
+                        <ul>
+                            <li><a href="#!" style="background: #222"><span></span></a></li>
+                            <li><a href="#!" style="background: #6e8cd5"><span></span></a></li>
+                            <li><a href="#!" style="background: #f56060"><span></span></a></li>
+                            <li><a href="#!" style="background: #44c28d"><span></span></a></li>
+                        </ul>
+                    </div>
+                    <h3>尺寸</h3>
+                    <div class="sizes-large">
+                        <span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+                    </div>
+                    <button class="add-cart-large">加入购物车</button>
+                </div>
+                <div class="product-detail">
+                    <div class="product-card">
+                        <img src="images/1.jpg" alt="" class="product-img">
+                        <div class="image-overlay"></div>
+                        <div class="add-product-to-cart">加入购物车</div>
+                        <div class="view-product-detail">查看详情</div>
+                        <div class="stats">
+                            <div class="stats-container">
+                                <span class="product-name">针织衫</span>
+                                <span><h4 class="pri">￥</h4><span class="product-price">390</span></span>
+                                <p>夏天衣服</p>
+                                <div class="product-options">
+                                    <strong>尺寸</strong> <span>XS, S, M, L, XL, XXL</span> <strong>颜色</strong>
+                                    <div class="colors">
+                                        <div class="c-blue"><span></span></div>
+                                        <div class="c-red"><span></span></div>
+                                        <div class="c-white"><span></span></div>
+                                        <div class="c-green"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product">
+                <div class="info-large">
+                    <h4>毛线衫</h4>
+                    <div class="code">产品编号: <strong>89356</strong></div>
+                    <div class="price-big"><span>￥</span><span>250</span> ￥200</div>
+                    <h3>颜色</h3>
+                    <div class="colors-large">
+                        <ul>
+                            <li><a href="#!" style="background: #222"><span></span></a></li>
+                            <li><a href="#!" style="background: #6e8cd5"><span></span></a></li>
+                            <li><a href="#!" style="background: #f56060"><span></span></a></li>
+                            <li><a href="#!" style="background: #44c28d"><span></span></a></li>
+                        </ul>
+                    </div>
+                    <h3>尺寸</h3>
+                    <div class="sizes-large">
+                        <span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+                    </div>
+                    <button class="add-cart-large">加入购物车</button>
+                </div>
+                <div class="product-detail">
+                    <div class="product-card">
+                        <img src="images/2.jpg" alt="" class="product-img">
+                        <div class="image-overlay"></div>
+                        <div class="add-product-to-cart">加入购物车</div>
+                        <div class="view-product-detail">查看详情</div>
+                        <div class="stats">
+                            <div class="stats-container">
+                                <span><h4 class="pri">￥</h4><span class="product-price">200</span></span>
+                                <span class="product-name">毛线衫</span>
+                                <p>夏天衣服</p>
+                                <div class="product-options">
+                                    <strong>尺寸</strong> <span>XS, S, M, L, XL, XXL</span> <strong>颜色</strong>
+                                    <div class="colors">
+                                        <div class="c-blue"><span></span></div>
+                                        <div class="c-red"><span></span></div>
+                                        <div class="c-white"><span></span></div>
+                                        <div class="c-green"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product">
+                <div class="info-large">
+                    <h4>衬衫裙</h4>
+                    <div class="code">产品编号: <strong>89356</strong></div>
+                    <div class="price-big"><span>￥</span><span>143</span> ￥139</div>
+                    <h3>颜色</h3>
+                    <div class="colors-large">
+                        <ul>
+                            <li><a href="#!" style="background: #222"><span></span></a></li>
+                            <li><a href="#!" style="background: #6e8cd5"><span></span></a></li>
+                            <li><a href="#!" style="background: #f56060"><span></span></a></li>
+                            <li><a href="#!" style="background: #44c28d"><span></span></a></li>
+                        </ul>
+                    </div>
+                    <h3>尺寸</h3>
+                    <div class="sizes-large">
+                        <span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+                    </div>
+                    <button class="add-cart-large">加入购物车</button>
+                </div>
+                <div class="product-detail">
+                    <div class="product-card">
+                        <img src="images/3.jpg" alt="" class="product-img">
+                        <div class="image-overlay"></div>
+                        <div class="add-product-to-cart">加入购物车</div>
+                        <div class="view-product-detail">查看详情</div>
+                        <div class="stats">
+                            <div class="stats-container">
+                                <span><h4 class="pri">￥</h4><span class="product-price">139</span></span>
+                                <span class="product-name">衬衫裙</span>
+                                <p>夏天衣服</p>
+                                <div class="product-options">
+                                    <strong>尺寸</strong> <span>XS, S, M, L, XL, XXL</span> <strong>颜色</strong>
+                                    <div class="colors">
+                                        <div class="c-blue"><span></span></div>
+                                        <div class="c-red"><span></span></div>
+                                        <div class="c-white"><span></span></div>
+                                        <div class="c-green"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product">
+                <div class="info-large">
+                    <h4>高领套衫</h4>
+                    <div class="code">产品编号: <strong>89356</strong></div>
+                    <div class="price-big"><span>￥</span><span>453</span> ￥399</div>
+                    <h3>颜色</h3>
+                    <div class="colors-large">
+                        <ul>
+                            <li><a href="#!" style="background: #222"><span></span></a></li>
+                            <li><a href="#!" style="background: #6e8cd5"><span></span></a></li>
+                            <li><a href="#!" style="background: #f56060"><span></span></a></li>
+                            <li><a href="#!" style="background: #44c28d"><span></span></a></li>
+                        </ul>
+                    </div>
+                    <h3>尺寸</h3>
+                    <div class="sizes-large">
+                        <span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+                    </div>
+                    <button class="add-cart-large">加入购物车</button>
+                </div>
+                <div class="product-detail">
+                    <div class="product-card">
+                        <img src="images/4.jpg" alt="" class="product-img">
+                        <div class="image-overlay"></div>
+                        <div class="add-product-to-cart">加入购物车</div>
+                        <div class="view-product-detail">查看详情</div>
+                        <div class="stats">
+                            <div class="stats-container">
+                                <span><h4 class="pri">￥</h4><span class="product-price">399</span></span>
+                                <span class="product-name">高领套衫</span>
+                                <p>夏天衣服</p>
+                                <div class="product-options">
+                                    <strong>尺寸</strong> <span>XS, S, M, L, XL, XXL</span> <strong>颜色</strong>
+                                    <div class="colors">
+                                        <div class="c-blue"><span></span></div>
+                                        <div class="c-red"><span></span></div>
+                                        <div class="c-white"><span></span></div>
+                                        <div class="c-green"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product">
+                <div class="info-large">
+                    <h4>中性卫衣</h4>
+                    <div class="code">产品编号: <strong>89356</strong></div>
+                    <div class="price-big"><span>￥</span><span>333</span> ￥309</div>
+                    <h3>颜色</h3>
+                    <div class="colors-large">
+                        <ul>
+                            <li><a href="#!" style="background: #222"><span></span></a></li>
+                            <li><a href="#!" style="background: #6e8cd5"><span></span></a></li>
+                            <li><a href="#!" style="background: #f56060"><span></span></a></li>
+                            <li><a href="#!" style="background: #44c28d"><span></span></a></li>
+                        </ul>
+                    </div>
+                    <h3>尺寸</h3>
+                    <div class="sizes-large">
+                        <span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+                    </div>
+                    <button class="add-cart-large">加入购物车</button>
+                </div>
+                <div class="product-detail">
+                    <div class="product-card">
+                        <img src="images/5.jpg" class="product-img" alt="">
+                        <div class="image-overlay"></div>
+                        <div class="add-product-to-cart">加入购物车</div>
+                        <div class="view-product-detail">查看详情</div>
+                        <div class="stats">
+                            <div class="stats-container">
+                                <span><h4 class="pri">￥</h4><span class="product-price">309</span></span>
+                                <span class="product-name">中性卫衣</span>
+                                <p>夏天衣服</p>
+                                <div class="product-options">
+                                    <strong>尺寸</strong> <span>XS, S, M, L, XL, XXL</span> <strong>颜色</strong>
+                                    <div class="colors">
+                                        <div class="c-blue"><span></span></div>
+                                        <div class="c-red"><span></span></div>
+                                        <div class="c-white"><span></span></div>
+                                        <div class="c-green"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product">
+                <div class="info-large">
+                    <h4>套头针织衫</h4>
+                    <div class="code">产品编号: <strong>89356</strong></div>
+                    <div class="price-big"><span>￥</span><span>430</span> ￥390</div>
+                    <h3>颜色</h3>
+                    <div class="colors-large">
+                        <ul>
+                            <li><a href="#!" style="background: #222"><span></span></a></li>
+                            <li><a href="#!" style="background: #6e8cd5"><span></span></a></li>
+                            <li><a href="#!" style="background: #9b887b"><span></span></a></li>
+                            <li><a href="#!" style="background: #44c28d"><span></span></a></li>
+                        </ul>
+                    </div>
+                    <h3>尺寸</h3>
+                    <div class="sizes-large">
+                        <span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>
+                    </div>
+                    <button class="add-cart-large">加入购物车</button>
+                </div>
+                <div class="product-detail">
+                    <div class="product-card">
+                        <img src="images/6.jpg" class="product-img" alt="">
+                        <div class="image-overlay"></div>
+                        <div class="add-product-to-cart">加入购物车</div>
+                        <div class="view-product-detail">查看详情</div>
+                        <div class="stats">
+                            <div class="stats-container">
+                                <span><h4 class="pri">￥</h4><span class="product-price">390</span></span>
+                                <span class="product-name">套头针织衫</span>
+                                <p>夏天衣服</p>
+                                <div class="product-options">
+                                    <strong>尺寸</strong> <span>XS, S, M, L, XL, XXL</span> <strong>颜色</strong>
+                                    <div class="colors">
+                                        <div class="c-blue"><span></span></div>
+                                        <div class="c-red"><span></span></div>
+                                        <div class="c-white"><span></span></div>
+                                        <div class="c-green"><span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        
     </div>
+    <script src="plugins/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
