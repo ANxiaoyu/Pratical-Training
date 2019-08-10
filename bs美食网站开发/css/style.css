@@ -1,0 +1,38 @@
+body {
+    background: url('../images/bj.png') repeat;
+}
+.search {
+    width: 100%;
+    margin: auto;
+    border: 1px solid #d2cdca;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.search .search-input {
+    margin-top: 40px;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+.search h3 {
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: normal;
+}
+.search .search-input i {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+.search .search-tel {
+    height: 120px;
+    line-height: 120px;
+}
+.search .search-tel span {
+    margin-right: 10px;
+}
+.search .blockquote {
+    margin-top: 30px;
+    margin-left: 30px;
+    line-height: 2;
+    font-size: 16px;
+}
