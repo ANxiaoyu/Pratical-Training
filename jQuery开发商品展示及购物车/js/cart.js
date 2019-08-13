@@ -21,7 +21,7 @@ function initCartProductByLocalStorage() {
                 '<input type="text" class="count-input" value="'+ v.total +'">'+
                 '<span class="add">+</span>'+
             '</td>'+
-            '<td class="cart-product-subtotal">'+ v.price +'</td>'+
+            '<td class="cart-product-subtotal">'+ v.price * v.total +'</td>'+
            ' <td class="cart-product-operation">'+
                ' <span class="delete">删除</span>'+
             '</td>'+

@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
         <div class="container">
-        <a class="navbar-brand" href="#">美食网</a>
+        <a class="navbar-brand" href="#">实训在线——美食网</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -598,15 +598,221 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+              <img src="images/pic1.jpg" class="img-thumbnail" alt="">
+            </div>
+            <div class="col-sm-4">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <a href="#collapseOne" data-toggle="collapse">广东菜系，简称粤菜</a>
+                  </div>    
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      【特色】：制作精细、因材施艺、四季有别、浓而不腻、味感清鲜、讲究造型。
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                   <a href="#collapseTwo" data-toggle="collapse">山东菜系，简称鲁菜</a>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      【特色】：制作精细、因材施艺、四季有别、浓而不腻、味感清鲜、讲究造型。
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <a href="#collapseThree" data-toggle="collapse">江苏菜系，简称苏菜</a>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      【特色】：制作精细、因材施艺、四季有别、浓而不腻、味感清鲜、讲究造型。
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <a href="#collapsefour" data-toggle="collapse">浙江菜系，简称浙菜</a>
+                  </div>
+                  <div id="collapsefour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      【特色】：制作精细、因材施艺、四季有别、浓而不腻、味感清鲜、讲究造型。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-    </div> 
+
+        <div class="product">
+          <h2 class="title">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              在线留言(点击弹出模式窗口)
+            </button>
+          </h2>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">在线留言</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">昵称</label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="请输入名字">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput2">性别</label>
+                      <!-- <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="请输入名字"> -->
+                      <div id="exampleFormControlInput2">
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">男</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">女</label>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput3">喜好</label>
+                      <div id="exampleFormControlInput3">
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <label class="custom-control-label" for="customCheck1">川菜</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="customCheck2">
+                          <label class="custom-control-label" for="customCheck2">豫菜</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="customCheck3">
+                          <label class="custom-control-label" for="customCheck3">粤菜</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="customCheck4">
+                          <label class="custom-control-label" for="customCheck4">鲁菜</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="customCheck5">
+                          <label class="custom-control-label" for="customCheck5">苏菜</label>
+                        </div>
+                        <div class="custom-control custom-checkbox custom-control-inline">
+                          <input type="checkbox" class="custom-control-input" id="customCheck6">
+                          <label class="custom-control-label" for="customCheck6">浙菜</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">口味</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>甜</option>
+                        <option>酸</option>
+                        <option>辣</option>
+                        <option>苦</option>
+                        <option>麻</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect2">住处</label>
+                      <select class="custom-select custom-select-sm" id="exampleFormControlSelect2">
+                        <option selected>南京</option>
+                        <option value="1">北京</option>
+                        <option value="2">重庆</option>
+                        <option value="3">武汉</option>
+                        <option value="4">深圳</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">内容</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                  <button type="button" class="btn btn-primary">留言</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
     
-<script src="js/style.js"></script>    
+    <div class="footer">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row footer-content">
+          <div class="col-sm-3">
+            <img src="images/logo.png" alt="">
+            <span>实训在线——美食网</span>
+            <img src="images/weibo.png" class="img-thumbnail" alt="">
+            <span>扫一扫 关注我们</span>
+          </div>
+          <div class="col-sm-9">
+            <div class="row">
+              <ul class="col-sm-3">
+                <li>网站首页</li>
+                <li>最新产品</li>
+                <li>美味蛋糕</li>
+                <li>新品上市</li>
+              </ul>
+              <ul class="col-sm-3">
+                <li>客户点评</li>
+                <li>美食故事</li>
+                <li>联系我们</li>
+                <li>友情链接</li>
+              </ul>
+              <ul class="col-sm-3">
+                <li>客户点评</li>
+                <li>美食故事</li>
+                <li>最新产品</li>
+                <li>新品上市</li>
+              </ul>
+              <ul class="col-sm-3">
+                <li>联系我们</li>
+                <li>友情链接</li>
+                <li>友情链接</li>
+                <li>联系我们</li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <!-- 排版-地址 -->
+                <address>
+                  <strong>实训在线——美食网</strong>
+                  <br>公司地址：湖北武汉
+                  <br>
+                  <abbr>
+                    联系电话：68889999  qq:888888888
+                  </abbr>
+                  <br> 技术支持：武汉明博科技有限公司
+                  <br>
+                  <a href="mailto:#">电子邮箱：support@shixun.online</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/style.js"></script> 
 </body>
 </html>

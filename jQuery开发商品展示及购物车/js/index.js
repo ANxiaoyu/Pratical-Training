@@ -110,7 +110,7 @@ function handleAddProductToCart() {
     $('#cart').find('.cart-item').each(function(i, target){
          var total = $(target).find('span.total');
          var productTotal = parseInt(total.text()); 
-         var cartName = $(target).find('span.name');
+         var cartName = $(target).find('span.name').text();
          if(cartName == productName) {   
              total.text(parseInt(productTotal + 1));        
          }
