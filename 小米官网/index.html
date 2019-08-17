@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>小米商城 - 小米CC9、小米MIX 3、Redmi K20，小米电视官方网站</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <div id="app">
         <div class="header">
             <div class="site-topbar">
                 <div class="container">
-                    <div class="topbar-nva">
+                    <div class="topbar-nav">
                         <a href="#">小米商城</a>
                         <span class="seq">|</span>
                         <a href="#">MIUI</a>
@@ -38,19 +41,20 @@
                     </div>
                     <div class="topbar-cart">
                         <a href="#" class="cart-mini">
-                            <em class="iconfont-cart"></em>
+                            <em class="fa fa-shopping-cart"></em>
                             购物车
                             <span class="cart-mini-num">(0)</span>
                         </a>
-                        <div class="cart-menu">
+                        <div class="cart-menu" style="height: 0px">
                             <div class="menu-content">
                                 <div class="loading">
                                     <div class="loader"></div>
+                                </div>
                                     <ul class="cart-list hide"></ul>
                                     <div class="cart-total clearfix hide"></div>
                                     <div class="msg msg-error hide"></div>
                                     <div class="msg msg-empty hide">购物车中还没有商品，赶紧选购吧！</div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -72,10 +76,10 @@
                         <ul class="nav-list clearfix">
                             <li class="nav-category" id="J_navCategory">
                                 <a href="#" class="link-category"><span class="text">全部商品分类</span></a>
-                                <div class="site-category" style="display: block;">
+                                <div class="site-category">
                                     <ul class="site-category-list clearfix site-category-list-custom" id="J_categoryList">
                                         <li class="category-item">
-                                            <a href="#" class="title">手机 电话卡<em class="iconfont-arrow-right-big"></em></a>
+                                            <a href="#" class="title">手机 电话卡<em class="fa fa-chevron-right"></em></a>
                                             <div class="children clearfix children-col-4">
                                                 <ul class="children-list children-list-col children-list-col-1">
                                                     <li>
@@ -220,7 +224,7 @@
                                             </div>
                                         </li>
                                         <li class="category-item">
-                                            <a href="#" class="title">电视 盒子<em class="iconfont-arrow-right-big"></em></a>
+                                            <a href="#" class="title">电视 盒子<em class="fa fa-chevron-right"></em></a>
                                             <div class="children clearfix children-col-4">
                                                 <ul class="children-list children-list-col children-list-col-1">
                                                     <li>
@@ -377,7 +381,7 @@
                                             </div>
                                         </li>
                                         <li class="category-item">
-                                            <a href="#" class="title">笔记本 平板<em class="iconfont-arrow-right-big"></em></a>
+                                            <a href="#" class="title">笔记本 平板<em class="fa fa-chevron-right"></em></a>
                                             <div class="children clearfix children-col-2">
                                                 <ul class="children-list children-list-col children-list-col-1">
                                                     <li>
@@ -458,7 +462,7 @@
                                             </div>
                                         </li>
                                         <li class="category-item">
-                                            <a href="#" class="title">家电 插线板<em class="iconfont-arrow-right-big"></em></a>
+                                            <a href="#" class="title">家电 插线板<em class="fa fa-chevron-right"></em></a>
                                             <div class="children clearfix children-col-4">
                                                 <ul class="children-list children-list-col children-list-col-1">
                                                     <li>
@@ -609,7 +613,7 @@
                                             </div>
                                         </li>
                                         <li class="category-item">
-                                            <a href="#" class="tltle">出行 穿戴<em class="iconfont-arrow-right-big"></em></a>
+                                            <a href="#" class="title">出行 穿戴<em class="fa fa-chevron-right"></em></a>
                                             <div class="children clearfix children-col-2">
                                                 <ul class="children-list children-list-col children-list-col-1">
                                                     <li>
@@ -690,7 +694,7 @@
                                             </div>
                                         </li>
                                         <li class="category-item">
-                                            <a href="#" class="title">智能 路由器<em class="iconfont-arrow-right-big"></em></a>
+                                            <a href="#" class="title">智能 路由器<em class="fa fa-chevron-right"></em></a>
                                             <div class="children clearfix children-col-2">
                                                 <ul class="children-list children-list-col children-list-col-1">
                                                     <li>
@@ -765,7 +769,7 @@
                                             </div>
                                         </li>
                                         <li class="category-item">
-                                            <a href="#" class="titlt">电源 配件<em class="iconfont-arrow-right-big"></em></a>
+                                            <a href="#" class="title">电源 配件<em class="fa fa-chevron-right"></em></a>
                                             <div class="children clearfix children-col-2">
                                                 <ul class="children-list children-list-col children-list-col-1">
                                                     <li>
@@ -846,7 +850,7 @@
                                             </div>
                                         </li>
                                         <li class="category-item">
-                                            <a href="#" class="title">健康 儿童<em class="iconfont-arrow-right-big"></em></a>
+                                            <a href="#" class="title">健康 儿童<em class="fa fa-chevron-right"></em></a>
                                             <div class="children clearfix children-col-4">
                                                 <ul class="children-list children-list-col children-list-col-1">
                                                     <li>
@@ -979,7 +983,7 @@
                                             </div>
                                         </li>
                                         <li class="category-item">
-                                            <a href="#" class="title">耳机 音箱<em class="iconfont-arrow-right-big"></em></a>
+                                            <a href="#" class="title">耳机 音箱<em class="fa fa-chevron-right"></em></a>
                                             <div class="children clearfix children-col-2">
                                                 <ul class="children-list children-list-col children-list-col-1">
                                                     <li>
@@ -1054,7 +1058,7 @@
                                             </div>
                                         </li>
                                         <li class="category-item">
-                                            <a href="#" class="title">生活 箱包<em class="iconfont-arrow-right-big"></em></a>
+                                            <a href="#" class="title">生活 箱包<em class="fa fa-chevron-right"></em></a>
                                             <div class="children clearfix children-col-4">
                                                 <ul class="children-list children-list-col children-list-col-1">
                                                     <li>
@@ -1633,7 +1637,7 @@
                     <div class="header-search">
                         <form action="" class="search-form clearfix">
                             <input type="search" class="search-text" id="search" name="keyword">
-                            <input type="submit" class="search-btn iconfont">
+                            <i class="fa fa-search" id="search-btn"></i>
                             <div class="search-hot-words">
                                 <a href="#">小米9</a><a href="#">小米9 SE</a>
                             </div>
@@ -1644,6 +1648,50 @@
         </div>
     </div>
     
-    <div class="home-hero-container container"></div>
+    <div class="home-hero-container container">
+        <div class="home-hero">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <a href="#"><img src="images/幻灯片1.jpg"  alt=""></a>
+                    <a href="#"><img src="images/幻灯片2.jpg" alt=""></a>
+                    <a href="#"><img src="images/幻灯片3.jpg" alt=""></a>
+                    <a href="#"><img src="images/幻灯片4.jpg" alt=""></a>
+                    <a href="#"><img src="images/幻灯片5.jpg" alt=""></a>
+                </div>
+                <div class="swiper-pagination">
+                    <a href="#" class="swiper-pagination-bullet active" ></a>
+                    <a href="#" class="swiper-pagination-bullet"></a>
+                    <a href="#" class="swiper-pagination-bullet" ></a>
+                    <a href="#" class="swiper-pagination-bullet" ></a>
+                    <a href="#" class="swiper-pagination-bullet" ></a>
+                </div>
+                <div class="swiper-button-left"></div>
+                <div class="swiper-button-right"></div>
+                <span class="swiper-notification"></span>
+            </div>
+            <div class="home-hero-sub row">
+                <div class="span4">
+                    <ul class="home-channel-list clearfix">
+                        <li><a href="#" target="_blank"><img src="images/span4小米秒杀.png" alt="">小米秒杀</a></li>
+                        <li><a href="#" target="_blank"><img src="images/span4企业团购.png" alt="">企业团购</a></li>
+                        <li><a href="#" target="_blank"><img src="images/span4F码通道.png" alt="">F码通道</a></li>
+                        <li><a href="#" target="_blank"><img src="images/span4米粉卡.png" alt="">米粉卡</a></li>
+                        <li><a href="#" target="_blank"><img src="images/span4以旧换新.png" alt="">以旧换新</a></li>
+                        <li><a href="#" target="_blank"><img src="images/span4话费充值.png" alt="">话费充值</a></li>
+                    </ul>
+                </div>
+                <div class="span16">
+                    <ul class="home-promo-list clearfix">
+                        <li class="first"><a href="#"><img src="images/span16.1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/span16.2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/span16.3.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
