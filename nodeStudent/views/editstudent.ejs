@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/student/editsave" method="POST">
+        学生编号 : <input type="number" readonly name="stuId" id="stuId" value="<%=student.stuId%>"><br>
+        学生姓名 : <input type="text" name="stuName" id="stuName" value="<%=student.stuName%>"><br>
+        学生年龄 : <input type="number" name="stuAge" id="stuAge" value="<%=student.stuAge%>"><br>
+        <input type="submit" value="修改学生信息">
+    </form>
+</body>
+</html>

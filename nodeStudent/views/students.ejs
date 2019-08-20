@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/student/add">添加学生信息..</a><br>
+    请输入编号查询: <input type="text" name="queryId" id="queryId">
+    <input type="button" value="查询"><br>
+    <table border="1" width="200">
+        <caption>学生信息系统</caption>
+        <thead>
+            <tr>
+                <td>学号</td>
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody>
+            <%
+                if(students.length>0){
+                    for(var index in students){
+
+            %>
+                <tr>
+                    <td><%=students[index].stuId%></td>
+                    <td><%=students[index].stuName%></td>
+                    <td><%=students[index].stuAge%></td>
+                    <td>
+                        <a href="/student/edit/<%=students[index].stuId%>">修改</a>
+                        <a href="/student/delete/<%=students[index].stuId%>">删除</a>
+                    </td>
+                </tr>
+            <%
+                }
+            }else{
+            %>
+            <tr>
+                <td colspan="4">学生信息为空..请先<a href="/student/add">添加..</a></td>
+            </tr>
+            <%}%>
+        </tbody>
+    </table>
+</body>
+</html>
