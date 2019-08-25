@@ -1,3 +1,198 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000000;
+}
+
+a {
+  color: #66ccff;
+}
+
+a:hover {
+  color: #4dc4ff;
+}
+
+header {
+  background-color: #66ccff;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  color: #ffffff;
+}
+
+header .pic {
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  header .pic {
+    text-align: left;
+  }
+}
+
+header .profile {
+  border-radius: 100%;
+}
+
+header .profile:hover {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+header a {
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+header p {
+  font-size: 15px;
+}
+
+@media (min-width: 1000px) {
+  header p {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 30px;
+  }
+}
+
+header h1 {
+  font-size: 50px;
+  line-height: initial;
+}
+
+@media (min-width: 1000px) {
+  header h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #e1e1e1;
+}
+
+.timeline {
+  min-height: 10px;
+}
+
+.timeline h4 {
+  text-align: center;
+}
+
+.timeline:after {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .timeline {
+    border-right: 1px solid #66ccff;
+    min-height: 300px;
+  }
+  .timeline h4 {
+    text-align: left;
+  }
+  .timeline:after {
+    content: '-';
+    background-color: #66ccff;
+    color: #66ccff;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: relative;
+    top: -45px;
+    left: 12px;
+    float: right;
+    border: 4px solid #ffffff;
+    -webkit-box-shadow: 0px 0px 0px 3px #66ccff;
+            box-shadow: 0px 0px 0px 3px #66ccff;
+    border-radius: 100%;
+  }
+}
+
+.skills,
+.education,
+footer {
+  border-top: 1px solid #66ccff;
+  padding: 35px 0;
+}
+
+.skills span {
+  padding: 5px 10px;
+  background-color: #66ccff;
+  color: #ffffff;
+  margin: 0 20px 20px 0;
+  display: inline-block;
+  text-align: center;
+  border-radius: 30px;
+}
+
+footer {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #cc6600;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  margin-top: 0;
+}
+
 .button,
 button {
   display: inline-block;

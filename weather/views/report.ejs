@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./public/js/echarts.js"></script>
+    <script src="./public/js/jquery.js"></script>
+    <style>
+        .box {
+            width: 600px;
+            height: 400px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="生成温度可视化报告"><br>
+    <div class="box"></div>
+</body>
+<script>
+    // 基于准备好的DOM，初始化echarts实例
+    var myChart = echarts.init($(".box").get(0));
+
+    // 指定图表的配置项和数据
+    var tempOptions = {
+        title: {
+            text: '武汉市近7天的温度变化趋势'
+        },
+        tooltip: {},
+        legend: {
+            data:['高温','低温']
+        },
+        xAxis: {
+            data: [],
+            name: "日期",
+            nameLocation: "end",
+            axisLabel:{
+                rotate:45
+            }
+        },
+        yAxis: {
+            name: "温度(℃)",
+            nameLocation: "end",
+        },
+        series: [{
+            name: '高温',
+            type: 'line',
+            data: []
+        },
+        {
+            name: '低温',
+            type: 'line',
+            data: []
+        }
+    ]
+    };
+
+    // 获取数据并渲染到图表上
+    var btn = $("input:eq(0)");
+    btn.on("click", function(){
+        $.get("http://127.0.0.1:8000/report", function(data){
+            console.log(data);
+            renderReport(data);
+        })
+    })
+    // 渲染图表的函数
+    function renderReport(data){
+        // 将字符串转换成json对象
+        var weatherItemsJson = JSON.parse(data);
+        for(var index in weatherItemsJson){
+            tempOptions.xAxis.data.push(weatherItemsJson[index].date);
+            tempOptions.series[0].data.push(weatherItemsJson[index].hightemp);
+            tempOptions.series[1].data.push(weatherItemsJson[index].lowTemop);
+        }
+        //使用刚指定的配置项和数据显示图表
+        myChart.setOption(tempOptions);
+    }
+</script>
+</html>
